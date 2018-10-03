@@ -45,9 +45,41 @@ projectTableOptions = {
   "drawCallback": function( settings ) {
     $('#summary_info').text($.fn.DataTable.settings[0].aanFeatures.i[0].outerText);
   },
-  // "fixedHeader": true,
-  // "dom": 'Bfrtip',
+  "fixedHeader": true,
+  "dom": 'Bfrtip',
   // "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+  "buttons": [
+    {
+      extend : 'copy',
+      exportOptions : {
+        columns : ':visible'
+      }
+    },
+    {
+      extend : 'csv',
+      exportOptions : {
+        columns : ':visible'
+      }
+    },
+    {
+      extend : 'excelHtml5',
+      exportOptions : {
+        columns : ':visible'
+      }
+    },
+    {
+      extend : 'pdf',
+      exportOptions : {
+        columns : ':visible'
+      }
+    },
+    {
+      extend : 'print',
+      exportOptions: {
+          columns: ':visible'
+      }
+    }
+  ],
   "search": {
     regex: true
   },
@@ -551,7 +583,7 @@ function projectBtnClick() {
         projectDataTable.column(i).visible(true);
       }
       projectDataTable.column(boardColumnNum).visible(false);
-      $('.dataTables_scrollBody').css('max-height', '487px');
+      $('.dataTables_scrollBody').css('max-height', '495px');
       break;
     case -1:
       projectsHead = 'Proposals';
@@ -563,7 +595,7 @@ function projectBtnClick() {
       }
       projectDataTable.column(boardColumnNum).visible(true);
       projectDataTable.column(capitalColumnNum).visible(false);
-      $('.dataTables_scrollBody').css('max-height', '533px');
+      $('.dataTables_scrollBody').css('max-height', '540px');
       break;
     default:
       projectsHead = 'Projects / Proposals';
@@ -573,7 +605,7 @@ function projectBtnClick() {
       for (let i = 1; i < totalColumnCount; i++) {
         projectDataTable.column(i).visible(true);
       }
-      $('.dataTables_scrollBody').css('max-height', '487px');
+      $('.dataTables_scrollBody').css('max-height', '495px');
   }
   $('th.projectsHead').text(projectsHead);
   $('th.stageHead').text(stageHead);

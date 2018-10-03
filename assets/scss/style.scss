@@ -853,6 +853,7 @@ nav, .footer{
             border-bottom: 1px solid #d4d2d2;
             text-align: left;
             box-shadow: 0 1px 0px #0000000f;
+            padding-right: 295px;
             &::before{
               content: '';
               font-family: "Font Awesome 5 Free";
@@ -866,13 +867,15 @@ nav, .footer{
               background-color: darken($brand-primary-green, 10%);
             }
           }
+          .SearchGroup{
+            margin-top: 1rem;
+            padding-top: 1rem;
+            padding-right: 0;
+          }
           .tableView{
             background-color: white;
             padding-bottom: 15px;
-            // overflow: auto;
-            // scroll-behavior: smooth;
-            // max-height: 599px;
-            // min-height: 599px;
+            padding-right: 0;
             font-size: 80%;
             .dataTables_filter{
               display: none;
@@ -1250,5 +1253,20 @@ body{
     *:focus {
       outline: 2px solid #2196f3;
     }
+  }
+}
+.dt-buttons{
+  position: absolute;
+  top: -32px;
+  right: 0;
+  z-index: 30;
+  .dt-button{
+    background: transparent;
+    box-shadow: none;
+    outline: 0;
+    border: 1px solid #c1bebe;
+    border-radius: 2px;
+    padding: 3px 12px;
+    cursor: pointer;
   }
 }
