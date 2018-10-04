@@ -163,12 +163,12 @@ projectTableOptions = {
   ]
 };
 currentUrls = {
-  "year2018": {
-    "ProjectDetailedData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectDetailedData",
-    "ProjectMetaData": "assets/json/newData/ProjectMetaData.json",
-    "ProjectYearlyDetailedData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectYearlyDetailedData"
+  "year2018Local": {
+    "ProjectDetailedData": "assets/json/data/ProjectDetailedData",
+    "ProjectMetaData": "assets/json/data/ProjectMetaData.json",
+    "ProjectYearlyDetailedData": "assets/json/data/ProjectYearlyDetailedData"
   },
-  "year2018Old": {
+  "year2018Blob": {
     "ProjectDetailedData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectDetailedData",
     "ProjectMetaData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectMetaData",
     "ProjectYearlyDetailedData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectYearlyDetailedData"
@@ -204,7 +204,7 @@ function flashRows() {
     // Stage
     htmlRowTemplate += '<td class="pStage" status="' + project.Stage + '" data-search="' + project.Stage + ' ' + project.SubStage + '" aria-label="Project stage is,'+ project.SubStage +' in '+ project.Stage +' stage.">' + project.SubStage + '</td>';
     // Capital Type
-    htmlRowTemplate += '<td class="pCapital" aria-label="Capital Type is,'+ project.CapitalType +'.">' + project.CapitalType + '</td>';
+    htmlRowTemplate += '<td class="pCapital" aria-label="Capital Type is,'+ project.Capital +'.">' + project.Capital + '</td>';
     // Infrastructure Class
     htmlRowTemplate += '<td class="pInfrastructure" aria-label="Infrastructure Class name is,'+ project.AssetClass +',.">' + project.AssetClass + '</td>';
     // Agency
@@ -214,16 +214,16 @@ function flashRows() {
     // Total estimated cost
     htmlRowTemplate += '<td class="pTCost" data-order="' + project.Value + '" aria-label="Total Estimated cost is,'+ formatCurrency(project.Value) +'.">' + formatCurrency(project.Value) + '</td>';
     // Expenditure to June 2018
-    htmlRowTemplate += '<td class="pExpenditure" data-order="' + project.TotalExpenseTillJune + '" aria-label="Total Expense Till June is,'+ millionfy(project.TotalExpenseTillJune) +'.">' + millionfy(project.TotalExpenseTillJune) + '</td>';
+    htmlRowTemplate += '<td class="pExpenditure" data-order="' + project.TotalExpenseTillJune + '" aria-label="Total Expense Till June is,'+ formatCurrency(project.TotalExpenseTillJune) +'.">' + formatCurrency(project.TotalExpenseTillJune) + '</td>';
     // Funding
     // 2018 - 19
-    htmlRowTemplate += '<td class="pFundingS1" data-order="' + project.Budget1819 + '" aria-label="Funding for 2018 to 2019 is,'+ millionfy(project.Budget1819) +'.">' + millionfy(project.Budget1819) + '</td>';
+    htmlRowTemplate += '<td class="pFundingS1" data-order="' + project.Budget1819 + '" aria-label="Funding for 2018 to 2019 is,'+ formatCurrency(project.Budget1819) +'.">' + formatCurrency(project.Budget1819) + '</td>';
     // 2019 - 20
-    htmlRowTemplate += '<td class="pFundingS2" data-order="' + project.Budget1920 + '" aria-label="Funding for 2019 to 2020 is,'+ millionfy(project.Budget1920) +'.">' + millionfy(project.Budget1920) + '</td>';
+    htmlRowTemplate += '<td class="pFundingS2" data-order="' + project.Budget1920 + '" aria-label="Funding for 2019 to 2020 is,'+ formatCurrency(project.Budget1920) +'.">' + formatCurrency(project.Budget1920) + '</td>';
     // 2020 - 21 to 2021 - 22
-    htmlRowTemplate += '<td class="pFundingS3" data-order="' + project.Budget2021 + project.Budget2122 + '" aria-label=" Total Funding for 2020 to 2021 and 2021 to 2022 is,'+ millionfy( fyYearExpenseSum(project.Budget2021, project.Budget2122) ) +'.">' + millionfy( fyYearExpenseSum(project.Budget2021, project.Budget2122) ) + '</td>';
+    htmlRowTemplate += '<td class="pFundingS3" data-order="' + project.Budget2021 + project.Budget2122 + '" aria-label=" Total Funding for 2020 to 2021 and 2021 to 2022 is,'+ formatCurrency( fyYearExpenseSum(project.Budget2021, project.Budget2122) ) +'.">' + formatCurrency( fyYearExpenseSum(project.Budget2021, project.Budget2122) ) + '</td>';
     // Beyond
-    htmlRowTemplate += '<td class="pFundingS4" data-order="' + project.Beyond + '" aria-label="Funding beyond 2022 is,'+ millionfy(project.Beyond) +'.">' + millionfy(project.Beyond) + '</td>';
+    htmlRowTemplate += '<td class="pFundingS4" data-order="' + project.Beyond + '" aria-label="Funding beyond 2022 is,'+ formatCurrency(project.Beyond) +'.">' + formatCurrency(project.Beyond) + '</td>';
     // End of Row
     htmlRowTemplate += '</tr>';
     // append Data
@@ -962,11 +962,14 @@ $('.baloons li').on('click', function () {
 
 /***------------------------------ On Page Ready Preparations ------------------------------***/
 $(document).ready(function() {
+  // Folder Animation Call
   init();
+  // Carosal Call
   $('#helpCarousel').carousel({
     'interval' : false,
     'keyboard' : false,
   });
+  // ToolTip Call
   $('[data-toggle="tooltip"]').tooltip();
   // Prefetch
   $.when(
@@ -978,15 +981,17 @@ $(document).ready(function() {
         }
       }
     }),
-    $.getJSON(currentUrls.year2018.ProjectDetailedData, function(response) {
-      activeDataObject.ProjectDetailedData = response;
-    }),
-    $.getJSON(currentUrls.year2018.ProjectMetaData, function(response) {
+    // Detail View is Disabled As for now, so there is no need of fetching data for it
+    // $.getJSON(currentUrls.year2018Blob.ProjectDetailedData, function(response) {
+    //   activeDataObject.ProjectDetailedData = response;
+    // }),
+    $.getJSON(currentUrls.year2018Blob.ProjectMetaData, function(response) {
       activeDataObject.ProjectMetaData = response;
     }),
-    $.getJSON(currentUrls.year2018.ProjectYearlyDetailedData, function(response) {
-      activeDataObject.ProjectYearlyDetailedData = response;
-    })
+    // Yearly Summary is not giving proper value therefore it is Disabled As for now, so there is no need of fetching data for it
+    // $.getJSON(currentUrls.year2018Blob.ProjectYearlyDetailedData, function(response) {
+    //   activeDataObject.ProjectYearlyDetailedData = response;
+    // })
   ).then(function() {
     populateTable(2018);
   });
