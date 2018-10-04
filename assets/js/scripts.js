@@ -981,17 +981,9 @@ $(document).ready(function() {
         }
       }
     }),
-    // Detail View is Disabled As for now, so there is no need of fetching data for it
-    // $.getJSON(currentUrls.year2018Blob.ProjectDetailedData, function(response) {
-    //   activeDataObject.ProjectDetailedData = response;
-    // }),
     $.getJSON(currentUrls.year2018Blob.ProjectMetaData, function(response) {
       activeDataObject.ProjectMetaData = response;
-    }),
-    // Yearly Summary is not giving proper value therefore it is Disabled As for now, so there is no need of fetching data for it
-    // $.getJSON(currentUrls.year2018Blob.ProjectYearlyDetailedData, function(response) {
-    //   activeDataObject.ProjectYearlyDetailedData = response;
-    // })
+    })
   ).then(function() {
     populateTable(2018);
   });
