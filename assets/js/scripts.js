@@ -200,7 +200,7 @@ function flashRows() {
   $.each(activeDataObject.ProjectMetaData, function(i, project) {
     htmlRowTemplate = '<tr tabindex="100' + i + '">';
     // Project
-    htmlRowTemplate += '<td class="pProjects" project-id="' + project.ProjectId + '" aria-label="Project name is,'+ project.Project +'.">' + project.Project + '</td>';
+    htmlRowTemplate += '<td class="pProjects" data-project-id="' + project.ProjectId + '" aria-label="Project name is,'+ project.Project +'.">' + project.Project + '</td>';
     // Stage
     htmlRowTemplate += '<td class="pStage" status="' + project.Stage + '" data-search="' + project.Stage + ' ' + project.SubStage + '" aria-label="Project stage is,'+ project.SubStage +' in '+ project.Stage +' stage.">' + project.SubStage + '</td>';
     // Capital Type
@@ -923,7 +923,7 @@ $('#projects tbody').on('click', 'tr[role=row]', function() {
       projectObject.removeClass('minimized');
       panelMinimize();
     }else {
-      projectID = rowObject.find('[project-id]').attr('project-id');
+      projectID = rowObject.find('[data-project-id]').attr('data-project-id');
       $('#projects tr.active').removeClass('active');
       for (let i = 1; i < totalColumnCount; i++) {
         projectDataTable.column(i).visible(false);
