@@ -382,7 +382,7 @@ function showProjectDetails(projectID) {
       $('.planningPanel').removeClass('d-none');
       break;
     default:
-      console.warn('Targeted Project is Neither on Planning nor on Delivery Stage');
+      break;
   }
 }
 
