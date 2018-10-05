@@ -71,7 +71,8 @@ projectTableOptions = {
       extend : 'pdf',
       exportOptions : {
         columns : ':visible'
-      }
+      },
+      orientation:'landscape',
     },
     {
       extend : 'print',
