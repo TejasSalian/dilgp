@@ -32,7 +32,7 @@
 
     <div class="container dilgp-animation-canvas">
       <div class="row explore d-flex">
-        <div class="col-12">
+        <div class="col-12" role="banner">
           <h1>State Infrastructure Plan</h1>
           <h2>Welcome to the interactive<br>Infrastructure Pipeline</h2>
           <div class="row">
@@ -50,9 +50,9 @@
         </div>
       </div>
       <div class="row intro d-none">
-        <header class="col-12 text-right">
+        <div class="col-12 intro-header text-right">
           <button type="button" class="btn btn-info btn-skip skip">View Dashboard</button>
-        </header>
+        </div>
         <!-- SVG is Here -->
         <div class="col-12 svg-ms-fix">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1253.5 1658" style="enable-background:new 0 0 1253.5 1658; width: 100%; display:block;" xml:space="preserve">
@@ -5454,12 +5454,12 @@
         <aside>
           <div class="col-12 asset-class">
             <div class="row">
-              <header class="col-12">
+              <div class="col-12 asset-class-header">
                 <h5 tabindex="50" aria-label="Following are Infrastructure Class filters which you can use to filter out details. Click on each filter to toggle filter activation status.">Infrastructure Classes</h5>
                 <span id="clear-assets-filter" class="d-none" data-reader="true" tabindex="61" aria-label="Clear all Infrastructure Class filters">
                   <i class="far fa-trash-alt"></i>
                 </span>
-              </header>
+              </div>
               <div class="col-12">
                 <div class="row">
                   <div class="col-6 filters" data-reader="true" tabindex="51" aria-label="Cross Government">
@@ -5518,12 +5518,12 @@
           </div>
           <div class="col-12 regions">
             <div class="row">
-              <header class="col-12">
+              <div class="col-12 regions-header">
                 <h5 data-reader="true" tabindex="71" aria-label="SIP Regions filters, Click on each filter to toggle filter activation status">SIP Regions</h5>
                 <span id="clear-regions-filter" class="d-none" data-reader="true" tabindex="85" aria-label="Clear all Regions filters">
                   <i class="far fa-trash-alt"></i>
                 </span>
-              </header>
+              </div>
               <div class="col-12">
                 <div class="row">
                   <div class="col-12 filters" data-reader="true" tabindex="72" aria-label="Cairns">
@@ -5571,7 +5571,7 @@
           </div>
         </aside>
         <div class="intractive-canvas">
-          <header>
+          <div class="intractive-canvas-header">
             <h3 tabindex="10" id="intractive-canvas-heading">State Infrastructure Plan Part B: Program<br>Infrastructure Pipeline</h3>
             <div class="actions">
               <div class="col-6">
@@ -5585,7 +5585,7 @@
                 </select>
               </div>
             </div>
-          </header>
+          </div>
           <div class="databox" tabindex="11" >
             <h5><span>2018-19</span> Highlights<i class="invisible-narrator-pause">.</i></h5>
             <table class="table table-responsive table-borderless">
@@ -5675,8 +5675,8 @@
         </div>
         <div class="project-details d-none">
           <div class="tablePannel playing">
-            <div class="tablePannelContent d-none">
-              <header class="col-12 fadeIn animation-target">
+            <div class="tablePannelContent d-none" role="main">
+              <div class="col-12 tablePannelContentHeader fadeIn animation-target">
                 <div class="row pt-2 pb-2">
                   <div class="col-2 text-left fadeIn animated content-control">
                     <button type="button" class="btn btn-outline-primary fadeIn animated tablePannel-minimize d-none" aria-label="Close Projects List View">
@@ -5693,7 +5693,7 @@
                     </h4>
                   </div>
                 </div>
-              </header>
+              </div>
               <div class="col-12 SearchGroup">
                 <div class="form-group">
                 </div>

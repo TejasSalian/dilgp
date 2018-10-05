@@ -116,7 +116,7 @@ nav img, .footer img {
     width: 100%;
     max-width: 100%;
     min-width: 100%; }
-  .dilgp-animation-canvas .intro header, .dilgp-animation-canvas .intro .intractive-portal aside .asset-class header, .dilgp-animation-canvas .intractive-portal aside .asset-class .intro header, .dilgp-animation-canvas .intro .intractive-portal aside .regions header, .dilgp-animation-canvas .intractive-portal aside .regions .intro header {
+  .dilgp-animation-canvas .intro .intro-header {
     width: 100%;
     padding-top: 3vh; }
   .dilgp-animation-canvas .intro img, .dilgp-animation-canvas .intro object {
@@ -199,21 +199,21 @@ nav img, .footer img {
           margin: 0;
           margin-top: -6px;
           margin-bottom: 0px; }
-      .dilgp-animation-canvas .intractive-portal aside header, .dilgp-animation-canvas .intractive-portal aside .asset-class header, .dilgp-animation-canvas .intractive-portal aside .regions header {
+      .dilgp-animation-canvas .intractive-portal aside .class-title, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header {
         margin-top: -15px;
         margin-bottom: 6px;
         background-color: red;
         flex: 0 0 100%;
         max-width: 100%;
         box-shadow: 0px 4px 3px #00000038; }
-        .dilgp-animation-canvas .intractive-portal aside header h5, .dilgp-animation-canvas .intractive-portal aside .asset-class header h5, .dilgp-animation-canvas .intractive-portal aside .regions header h5 {
+        .dilgp-animation-canvas .intractive-portal aside .class-title h5, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header h5, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header h5 {
           color: #fff;
           font-size: 85%;
           font-weight: normal;
           padding-top: 4px;
           padding-bottom: 0px;
           margin-bottom: 6px; }
-        .dilgp-animation-canvas .intractive-portal aside header span, .dilgp-animation-canvas .intractive-portal aside .asset-class header span, .dilgp-animation-canvas .intractive-portal aside .regions header span {
+        .dilgp-animation-canvas .intractive-portal aside .class-title span, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header span, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header span {
           position: absolute;
           right: 8px;
           top: 1px;
@@ -230,10 +230,10 @@ nav img, .footer img {
         background-image: url("../images/asset-class.png");
         background-size: contain;
         background-repeat: repeat; }
-        .dilgp-animation-canvas .intractive-portal aside .asset-class header {
+        .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header {
           background-color: #37001a;
           border-bottom: 1px solid #37001a; }
-          .dilgp-animation-canvas .intractive-portal aside .asset-class header span:hover {
+          .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header span:hover {
             background-color: #FFF;
             color: #000; }
         .dilgp-animation-canvas .intractive-portal aside .asset-class .filters {
@@ -246,10 +246,10 @@ nav img, .footer img {
         background-image: url("../images/regions.png");
         background-size: contain;
         background-repeat: repeat; }
-        .dilgp-animation-canvas .intractive-portal aside .regions header {
+        .dilgp-animation-canvas .intractive-portal aside .regions .regions-header {
           background-color: #00655a;
           border-bottom: 1px solid #00655a; }
-          .dilgp-animation-canvas .intractive-portal aside .regions header span:hover {
+          .dilgp-animation-canvas .intractive-portal aside .regions .regions-header span:hover {
             background-color: #FFF;
             color: #000; }
         .dilgp-animation-canvas .intractive-portal aside .regions .filters {
@@ -298,12 +298,12 @@ nav img, .footer img {
       transition-duration: 0.25s;
       transition-timing-function: ease-in-out;
       overflow: hidden; }
-      .dilgp-animation-canvas .intractive-portal .intractive-canvas header, .dilgp-animation-canvas .intractive-portal .intractive-canvas aside .asset-class header, .dilgp-animation-canvas .intractive-portal aside .asset-class .intractive-canvas header, .dilgp-animation-canvas .intractive-portal .intractive-canvas aside .regions header, .dilgp-animation-canvas .intractive-portal aside .regions .intractive-canvas header {
+      .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header {
         text-align: center;
         position: relative;
         margin-top: -36px;
         top: 96px; }
-        .dilgp-animation-canvas .intractive-portal .intractive-canvas header h3 {
+        .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header h3 {
           font-size: 144%;
           position: absolute;
           width: 52%;
@@ -311,19 +311,19 @@ nav img, .footer img {
           left: 20.5%;
           z-index: 2;
           color: #6a0032; }
-        .dilgp-animation-canvas .intractive-portal .intractive-canvas header .actions {
+        .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions {
           width: 100%;
           position: relative;
           top: -60px; }
-          .dilgp-animation-canvas .intractive-portal .intractive-canvas header .actions .col-6 {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .col-6 {
             float: left; }
-            .dilgp-animation-canvas .intractive-portal .intractive-canvas header .actions .col-6 select {
+            .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .col-6 select {
               width: 50%;
               float: right;
               position: relative;
               top: 10px;
               z-index: 2; }
-          .dilgp-animation-canvas .intractive-portal .intractive-canvas header .actions .help, .dilgp-animation-canvas .intractive-portal .intractive-canvas header .actions .pipeline-overview {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .help, .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .pipeline-overview {
             float: left;
             outline: 0;
             border: 0;
@@ -633,18 +633,18 @@ nav img, .footer img {
           max-width: 100%;
           width: 100%;
           flex-wrap: wrap; }
-          .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent header {
+          .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader {
             background-color: white;
             max-height: 86px;
             box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2784313725); }
-            .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent header .btn {
+            .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader .btn {
               margin: 16px 10px 5px 0px;
               border-radius: 20px;
               padding: 3px 9px; }
-            .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent header .content-control {
+            .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader .content-control {
               position: relative;
               z-index: 27; }
-            .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent header h4 {
+            .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader h4 {
               margin: 5px 10px 5px 0px;
               padding-top: 7px;
               font-size: 125%;
@@ -653,7 +653,7 @@ nav img, .footer img {
               position: relative;
               z-index: 26;
               text-align: center; }
-              .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent header h4 #summary_info {
+              .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader h4 #summary_info {
                 font-size: 74%;
                 color: #00000096;
                 margin-top: 8px;
