@@ -50,35 +50,19 @@ projectTableOptions = {
   // "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
   "buttons": [
     {
-      extend : 'copy',
-      exportOptions : {
-        columns : ':visible'
-      }
-    },
-    {
-      extend : 'csv',
-      exportOptions : {
-        columns : ':visible'
-      }
-    },
-    {
       extend : 'excelHtml5',
+      text: 'Export to Excel',
       exportOptions : {
         columns : ':visible'
       }
     },
     {
       extend : 'pdf',
+      text: 'Export to PDF',
       exportOptions : {
         columns : ':visible'
       },
       orientation:'landscape',
-    },
-    {
-      extend : 'print',
-      exportOptions: {
-          columns: ':visible'
-      }
     }
   ],
   "search": {
