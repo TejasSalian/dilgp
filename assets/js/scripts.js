@@ -169,6 +169,7 @@ activeDataObject = {
 var populateTable = function(targetedYear) {
   $.when(
     refreshDataObject(targetedYear),
+    flashYearlySummary(),
     flashRows(),
     flashBaloons()
   ).then(function () {
@@ -178,6 +179,40 @@ var populateTable = function(targetedYear) {
 
 // load selected year data to activeData
 function refreshDataObject() {}
+
+// flash Yearly summary table on pipeline view
+function flashYearlySummary() {
+  let narratorStop = '<i class="invisible-narrator-pause">.</i>';
+  $.each(activeDataObject.ProjectYearlyDetailedData, function(i, objects) {
+    switch (String(objects.Key)) {
+      case 'CurrentFY':
+        $('#summary-year').html(String(objects.Value) + narratorStop);
+        break;
+      case 'CapitalBudget':
+        $('#capitalBudget').html(objects.Value + narratorStop);
+        break;
+      case 'JobsSupported':
+        $('#jobsSupported').html(Number(objects.Value).toLocaleString('en') + narratorStop);
+        break;
+      case 'TotalProgram':
+        $('#totalPrograms').html(Number(objects.Value).toLocaleString('en') + narratorStop);
+        break;
+      case 'TotalProjects':
+        $('#constructionProjects').html(Number(objects.Value).toLocaleString('en') + narratorStop);
+        break;
+      case 'TotalGrants':
+        $('#totalGrands').html(Number(objects.Value).toLocaleString('en') + narratorStop);
+        break;
+    }
+  });
+  let count = 0;
+  $.each(activeDataObject.ProjectMetaData, function(i, project) {
+    if (String(project.Stage) == String('PLANNING')) {
+      count++;
+    }
+  });
+  $('#proposalsInPlanning').html(count.toLocaleString('en') + narratorStop);
+}
 
 // flash activeData to table
 function flashRows() {
@@ -968,6 +1003,9 @@ $(document).ready(function() {
     }),
     $.getJSON(currentUrls.year2018Blob.ProjectMetaData, function(response) {
       activeDataObject.ProjectMetaData = response;
+    }),
+    $.getJSON(currentUrls.year2018Blob.ProjectYearlyDetailedData, function(response) {
+      activeDataObject.ProjectYearlyDetailedData = response;
     })
   ).then(function() {
     populateTable(2018);

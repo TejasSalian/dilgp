@@ -43,7 +43,7 @@
       </div>
       <div class="row video d-none">
         <div class="col-12">
-          <video id="CubeAnim" muted poster="assets/videos/CubeAnim.png" tabindex="3" aria-label="Infrastructure Pipeline is loading.">
+          <video id="CubeAnim" muted preload="auto" poster="assets/videos/CubeAnim.png" tabindex="3" aria-label="Infrastructure Pipeline is loading.">
             <source src="assets/videos/CubeAnim.mp4" type="video/mp4">
             <source src="assets/videos/CubeAnim.webm" type="video/webm">
           </video>
@@ -5587,38 +5587,38 @@
             </div>
           </div>
           <div class="databox" tabindex="11" >
-            <h5><span>2018-19</span> Highlights<i class="invisible-narrator-pause">.</i></h5>
+            <h5><span id="summary-year"></span> Highlights<i class="invisible-narrator-pause">.</i></h5>
             <table class="table table-responsive table-borderless">
               <tbody>
                 <tr>
                   <td>Capital Budget</td>
                   <td>:</td>
-                  <td>$11.6B<i class="invisible-narrator-pause">.</i></td>
+                  <td id="capitalBudget"></td>
                 </tr>
                 <tr>
                   <td>Jobs supported</td>
                   <td>:</td>
-                  <td>38,000<i class="invisible-narrator-pause">.</i></td>
+                  <td id="jobsSupported"></td>
                 </tr>
                 <tr>
                   <td>Proposals in Planning</td>
                   <td>:</td>
-                  <td>125<i class="invisible-narrator-pause">.</i></td>
+                  <td id="proposalsInPlanning"></td>
                 </tr>
                 <tr>
                   <td>Total Construction Projects</td>
                   <td>:</td>
-                  <td>328<i class="invisible-narrator-pause">.</i></td>
+                  <td id="constructionProjects"></td>
                 </tr>
                 <tr>
                   <td>Total Programs</td>
                   <td>:</td>
-                  <td>129<i class="invisible-narrator-pause">.</i></td>
+                  <td id="totalPrograms"></td>
                 </tr>
                 <tr>
                   <td>Total Grants</td>
                   <td>:</td>
-                  <td>71<i class="invisible-narrator-pause">.</i></td>
+                  <td id="totalGrands"></td>
                 </tr>
               </tbody>
             </table>
