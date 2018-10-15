@@ -154,9 +154,9 @@ currentUrls = {
     "ProjectYearlyDetailedData": "assets/json/data/ProjectYearlyDetailedData"
   },
   "year2018Blob": {
-    "ProjectDetailedData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectDetailedData",
-    "ProjectMetaData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectMetaData",
-    "ProjectYearlyDetailedData": "https://strategydotzero.blob.core.windows.net/dilgp2018test/ProjectYearlyDetailedData"
+    "ProjectDetailedData": "https://strategydotzero.blob.core.windows.net/dilgpjson/ProjectDetailedData",
+    "ProjectMetaData": "https://strategydotzero.blob.core.windows.net/dilgpjson/ProjectMetaData",
+    "ProjectYearlyDetailedData": "https://strategydotzero.blob.core.windows.net/dilgpjson/ProjectYearlyDetailedData"
   }
 };
 activeDataObject = {
