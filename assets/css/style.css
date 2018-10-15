@@ -526,7 +526,6 @@ nav img, .footer img {
       display: flex;
       flex: 0 0 5%;
       max-width: 5%;
-      cursor: pointer;
       background-color: #009887; }
       .dilgp-animation-canvas .intractive-portal .project-details-btn .name-slip {
         display: flex;
