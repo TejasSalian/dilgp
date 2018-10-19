@@ -295,8 +295,9 @@ function millionfy(value) {
 }
 
 function fyYearExpenseSum(fy1, fy2){
-  if (fy1 && fy2) {
-    return String( Number(fy1) + Number(fy2) );
+  let sum = Number(fy1) + Number(fy2);
+  if (sum != 0) {
+    return String(sum);
   }else {
     return '';
   }
