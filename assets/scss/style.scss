@@ -296,14 +296,15 @@ nav, .footer{
           position: absolute;
           right: 8px;
           top: 1px;
-          padding: 2px 6px;
+          padding: 5px 6px;
           color: #fff;
           border-radius: 4px;
           cursor: pointer;
           transition: all;
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out;
-          font-size: 90%;
+          font-size: 72%;
+          font-style: italic;
         }
       }
       .asset-class{
@@ -1261,4 +1262,18 @@ body{
     padding: 3px 12px;
     cursor: pointer;
   }
+}
+#projects_info{
+  display: none;
+}
+.dataTables_wrapper:after {
+    visibility: visible;
+    display: block;
+    content: '*some figures may differ slightly to the 2018-19 Budget Paper 3 due to rounding';
+    clear: both;
+    height: 20px;
+    margin-top: 10px;
+    font-size: 100%;
+    color: #333;
+    font-style: italic;
 }

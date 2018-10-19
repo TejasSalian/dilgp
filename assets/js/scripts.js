@@ -38,7 +38,7 @@ projectTableOptions = {
   "paging": false,
   "autoWidth": false,
   "info": true,
-  "scrollY" : "487px",
+  "scrollY" : "457px",
   "scrollX" : true,
   "scrollCollapse" : true,
   "dom": '<"d-none"i>rt<"clear">',
@@ -47,7 +47,6 @@ projectTableOptions = {
   },
   "fixedHeader": true,
   "dom": 'Bfrtip',
-  // "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
   "buttons": [
     {
       extend : 'excelHtml5',
@@ -604,7 +603,7 @@ function projectBtnClick() {
         projectDataTable.column(i).visible(true);
       }
       projectDataTable.column(boardColumnNum).visible(false);
-      $('.dataTables_scrollBody').css('max-height', '495px');
+      $('.dataTables_scrollBody').css('max-height', '457px');
       break;
     case -1:
       projectsHead = 'Proposals';
@@ -626,7 +625,7 @@ function projectBtnClick() {
       for (let i = 1; i < totalColumnCount; i++) {
         projectDataTable.column(i).visible(true);
       }
-      $('.dataTables_scrollBody').css('max-height', '495px');
+      $('.dataTables_scrollBody').css('max-height', '457px');
   }
   $('th.projectsHead').text(projectsHead);
   $('th.stageHead').text(stageHead);
