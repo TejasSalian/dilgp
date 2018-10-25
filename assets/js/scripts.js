@@ -260,14 +260,8 @@ function buildTable() {
 // Roundoff Value to one decimal point and Format to Currency
 function formatCurrency(value) {
   if (value) {
-    let valueRange;
-    value = Number(value);
-
-    value = value / 1000000;
-    valueRange = 'M';
-
-    value = value.toFixed(3);
-    return '$' + value + valueRange;
+    value = Number(value) / 1000000;
+    return value.toFixed(3);
   }else {
     return '--';
   }
