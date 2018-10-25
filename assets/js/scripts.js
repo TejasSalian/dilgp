@@ -263,20 +263,10 @@ function formatCurrency(value) {
     let valueRange;
     value = Number(value);
 
-    if (value >= 1000000000) {
-      value = value / 1000000000;
-      valueRange = 'B';
-    } else if (value >= 1000000) {
-      value = value / 1000000;
-      valueRange = 'M';
-    } else if (value >= 1000) {
-      value = value / 1000;
-      valueRange = 'K';
-    } else {
-      valueRange = '';
-    }
+    value = value / 1000000;
+    valueRange = 'M';
 
-    value = value.toFixed(2);
+    value = value.toFixed(3);
     return '$' + value + valueRange;
   }else {
     return '--';
