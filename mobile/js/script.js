@@ -28,6 +28,26 @@ $('#yearSpan').on('change', function() {
   }
 });
 
+// Roundoff Value to one decimal point and Format to Currency
+function formatCurrency(value) {
+  if (value) {
+    value = Number(value) / 1000000;
+    return value.toFixed(3);
+  }else {
+    return '--';
+  }
+
+}
+
+// Just Make it Million Dollar
+function millionfy(value) {
+  if (value != '') {
+    return '$' + value + 'M';
+  }else {
+    return '--';
+  }
+}
+
 function tableUpdater() {
   var data, tableHtml = '';
   $('#dataTable tbody').html(tableHtml);
@@ -721,7 +741,7 @@ function formatValue(value) {
         // else {
         //     if(value > 999999 && value <= 999999999) {
                 // return '$'+(value/1000000).toFixed(4) + 'M';
-                return '$'+ value + 'M';
+                return '$'+ formatCurrency(value) + 'M';
         //     }
         //     else {
         //         if(value > 999999999){
