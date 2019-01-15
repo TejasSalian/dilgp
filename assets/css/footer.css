@@ -1,0 +1,12 @@
+.site-footer {
+  font-size: 80%; }
+  .site-footer h2 {
+    font-size: 120%; }
+  .site-footer .nav-link {
+    color: black;
+    padding-top: 0;
+    padding-bottom: 10px; }
+  .site-footer .bg-dark {
+    background-color: #c9c9ca !important; }
+
+/*# sourceMappingURL=footer.css.map */

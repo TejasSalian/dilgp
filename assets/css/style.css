@@ -8,7 +8,7 @@
 .dsdmip-footer {
   background-color: #79ba00;
   background-size: 100% 100%;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGWCAIAAAA2Y36RAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAF+mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTA5LTE3VDExOjA4OjM5KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOC0wOS0xOFQxMDo1NjowNSswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOC0wOS0xOFQxMDo1NjowNSswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplZDQ4OTUxZS05ZTU2LTgyNDYtOWI2Yy1kMWYxM2Q0YWRiNWQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpkZjllNDdjYi0yM2MwLTA5NDAtYjQ2ZS0yNmZmMWY1ZjNiNjIiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZDY3MDU4My00MGFhLThmNDgtYmZlZi04ZWZmZWIwNTY5MGYiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjFkNjcwNTgzLTQwYWEtOGY0OC1iZmVmLThlZmZlYjA1NjkwZiIgc3RFdnQ6d2hlbj0iMjAxOC0wOS0xN1QxMTowODozOSswNTozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDplZDQ4OTUxZS05ZTU2LTgyNDYtOWI2Yy1kMWYxM2Q0YWRiNWQiIHN0RXZ0OndoZW49IjIwMTgtMDktMThUMTA6NTY6MDUrMDU6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz69245eAAAAHElEQVQ4jWOo3MXAMIpH8SimL1ZSUhrFo3i4YgBDuVOabOyjtAAAAABJRU5ErkJggg==); }
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGWCAIAAAA2Y36RAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAF+mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTA5LTE3VDExOjA4OjM5KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOC0wOS0xOFQxMDo1NjowNSswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOC0wOS0xOFQxMDo1NjowNSswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplZDQ4OTUxZS05ZTU2LTgyNDYtOWI2Yy1kMWYxM2Q0YWRiNWQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpkZjllNDdjYi0yM2MwLTA5NDAtYjQ2ZS0yNmZmMWY1ZjNiNjIiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZDY3MDU4My00MGFhLThmNDgtYmZlZi04ZWZmZWIwNTY5MGYiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjFkNjcwNTgzLTQwYWEtOGY0OC1iZmVmLThlZmZlYjA1NjkwZiIgc3RFdnQ6d2hlbj0iMjAxOC0wOS0xN1QxMTowODozOSswNTozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDplZDQ4OTUxZS05ZTU2LTgyNDYtOWI2Yy1kMWYxM2Q0YWRiNWQiIHN0RXZ0OndoZW49IjIwMTgtMDktMThUMTA6NTY6MDUrMDU6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz69245eAAAAHElEQVQ4jWOo3MXAMIpH8SimL1ZSUhrFo3i4YgBDuVOabOyjtAAAAABJRU5ErkJggg=="); }
 
 .brand-secondary-blue {
   background-color: #072e4c; }
@@ -45,12 +45,13 @@ body {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 1024px; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 1256px; } }
 
-nav img, .footer img {
+.footer img,
+nav img {
   width: calc(100% + 30px);
   margin-left: -15px; }
 
@@ -119,7 +120,8 @@ nav img, .footer img {
   .dilgp-animation-canvas .intro .intro-header {
     width: 100%;
     padding-top: 3vh; }
-  .dilgp-animation-canvas .intro img, .dilgp-animation-canvas .intro object {
+  .dilgp-animation-canvas .intro img,
+  .dilgp-animation-canvas .intro object {
     width: calc(100% + 30px);
     margin-left: -15px; }
   .dilgp-animation-canvas .intro .btn-skip {
@@ -135,7 +137,7 @@ nav img, .footer img {
     background-color: #009988;
     display: inline-block;
     color: white;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4509803922);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4509803922);
     z-index: 3; }
   .dilgp-animation-canvas .intro .footer-control {
     background-color: #f4fbfb;
@@ -150,7 +152,8 @@ nav img, .footer img {
       font-weight: 500;
       color: black;
       padding: 10px; }
-    .dilgp-animation-canvas .intro .footer-control .go-back, .dilgp-animation-canvas .intro .footer-control .go-forward {
+    .dilgp-animation-canvas .intro .footer-control .go-back,
+    .dilgp-animation-canvas .intro .footer-control .go-forward {
       cursor: pointer;
       display: inline-block; }
   .dilgp-animation-canvas .intractive-portal {
@@ -162,7 +165,7 @@ nav img, .footer img {
       flex-wrap: wrap; }
       .dilgp-animation-canvas .intractive-portal aside .filters {
         text-align: center;
-        padding: 0px;
+        padding: 0;
         cursor: pointer; }
         .dilgp-animation-canvas .intractive-portal aside .filters.active span {
           top: 12px;
@@ -196,22 +199,20 @@ nav img, .footer img {
           line-height: 1;
           position: relative;
           z-index: 1;
-          margin: 0;
-          margin-top: -6px;
-          margin-bottom: 0px; }
+          margin: -6px 0 0; }
       .dilgp-animation-canvas .intractive-portal aside .class-title, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header {
         margin-top: -15px;
         margin-bottom: 6px;
         background-color: red;
         flex: 0 0 100%;
         max-width: 100%;
-        box-shadow: 0px 4px 3px #00000038; }
+        box-shadow: 0 4px 3px #00000038; }
         .dilgp-animation-canvas .intractive-portal aside .class-title h5, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header h5, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header h5 {
           color: #fff;
           font-size: 85%;
           font-weight: normal;
           padding-top: 4px;
-          padding-bottom: 0px;
+          padding-bottom: 0;
           margin-bottom: 6px; }
         .dilgp-animation-canvas .intractive-portal aside .class-title span, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header span, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header span {
           position: absolute;
@@ -273,7 +274,7 @@ nav img, .footer img {
               background-color: #00655a; }
           .dilgp-animation-canvas .intractive-portal aside .regions .filters button {
             width: calc(100% - 20px);
-            padding-bottom: 0px;
+            padding-bottom: 0;
             cursor: pointer;
             margin-left: 10px;
             margin-right: 10px;
@@ -288,7 +289,7 @@ nav img, .footer img {
             background-color: #008b7c;
             border: 1px solid #007c6e;
             box-shadow: none;
-            outline: 0px; }
+            outline: 0; }
     .dilgp-animation-canvas .intractive-portal .intractive-canvas {
       flex: 0 0 79%;
       max-width: 79%;
@@ -324,7 +325,8 @@ nav img, .footer img {
               position: relative;
               top: 10px;
               z-index: 2; }
-          .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .help, .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .pipeline-overview {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .help,
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .pipeline-overview {
             float: left;
             outline: 0;
             border: 0;
@@ -336,11 +338,8 @@ nav img, .footer img {
             top: -2px;
             display: inline-block;
             z-index: 23;
-            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4509803922);
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 9px;
-            padding-right: 9px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4509803922);
+            padding: 0 9px;
             line-height: 2.5;
             height: auto;
             font-size: 75%;
@@ -358,6 +357,9 @@ nav img, .footer img {
         border-radius: 2px;
         box-shadow: 0 0 6px #a5b8b7;
         padding: 15px; }
+        @media (min-width: 992px) and (max-width: 1025px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .databox {
+            transform: scale(0.9); } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .databox h5 {
           color: #6a0032;
           font-weight: 700;
@@ -375,7 +377,7 @@ nav img, .footer img {
             color: #6a0032;
             font-weight: 700; }
       .dilgp-animation-canvas .intractive-portal .intractive-canvas img {
-        width: calc( 100% + 30px );
+        width: calc(100% + 30px);
         position: relative;
         left: -15px;
         top: 148px;
@@ -385,10 +387,19 @@ nav img, .footer img {
         z-index: 1;
         top: -653px;
         left: 232px; }
+        @media (min-width: 992px) and (max-width: 1025px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-anim {
+            transform: scale(0.8);
+            top: -533px;
+            left: 163px; } }
       .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names {
         position: relative;
         z-index: 1;
         top: -800px; }
+        @media (min-width: 992px) and (max-width: 1025px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names {
+            top: -660px;
+            transform: scale(0.9); } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul {
           list-style: none; }
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li {
@@ -403,36 +414,64 @@ nav img, .footer img {
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
               top: -188px;
               left: 1.6%; }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
+                  top: -202px;
+                  left: -5.4%; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(2) {
               left: 4.9%;
               top: -169px;
               transform: scale(0.92); }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(2) {
+                  left: -2.1%;
+                  top: -184px; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(3) {
               left: 7.4%;
               top: -155px;
               transform: scale(0.92); }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(3) {
+                  left: -0.6%;
+                  top: -172px; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(4) {
               left: 10.2%;
               top: -142px;
               transform: scale(0.92); }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(4) {
+                  left: 2.2%;
+                  top: -159px; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(5) {
               font-size: 114%;
               text-transform: uppercase;
               top: -219px;
               left: 14%;
               cursor: pointer; }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(5) {
+                  top: -230px;
+                  left: 5%; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(6) {
               font-size: 114%;
               text-transform: uppercase;
               top: 94px;
               left: -32.7%;
               cursor: help; }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(6) {
+                  top: 53px;
+                  left: -48.9%; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(7) {
               font-size: 114%;
               text-transform: uppercase;
               top: 136px;
               left: 5.1%;
               cursor: pointer; }
+              @media (min-width: 992px) and (max-width: 1025px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(7) {
+                  top: 94px;
+                  left: -7.5%; } }
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li .board-animator {
               position: absolute;
               display: block;
@@ -475,13 +514,22 @@ nav img, .footer img {
         z-index: 1;
         color: #009887;
         color: #009887; }
+        @media (min-width: 992px) and (max-width: 1025px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-span h6 {
+            left: -350px;
+            top: -739px; } }
       .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul {
         list-style: none;
         position: relative;
         top: -1100px;
         outline: 0;
         border: 0;
-        box-shadow: 0; }
+        box-shadow: none; }
+        @media (min-width: 992px) and (max-width: 1025px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul {
+            top: -948px;
+            left: -70px;
+            transform: scale(0.85); } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li {
           position: relative;
           width: 100px;
@@ -523,6 +571,10 @@ nav img, .footer img {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
             left: 122px;
             top: 278px; }
+            @media (min-width: 992px) and (max-width: 1025px) {
+              .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
+                left: 84px;
+                top: 268px; } }
     .dilgp-animation-canvas .intractive-portal .project-details-btn {
       display: flex;
       flex: 0 0 5%;
@@ -546,10 +598,10 @@ nav img, .footer img {
       width: 100%;
       background-color: #009887; }
       .dilgp-animation-canvas .intractive-portal .project-details .tablePannel {
-        width: 0px;
+        width: 0;
         height: 746px;
-        top: 0px;
-        right: 0px;
+        top: 0;
+        right: 0;
         float: right;
         position: relative;
         z-index: 3;
@@ -594,25 +646,25 @@ nav img, .footer img {
           animation-delay: 0s; }
 @keyframes fillTablePanel {
   0% {
-    width: 0px;
-    border-radius: 100% 0% 0% 100%;
+    width: 0;
+    border-radius: 100% 0 0 100%;
     background-color: #009887; }
   75% {
     width: 1680%;
-    border-radius: 0% 0% 0% 0%;
+    border-radius: 0 0 0 0;
     background-color: #009887; }
   100% {
     width: 1680%;
-    border-radius: 0% 0% 0% 0%;
+    border-radius: 0 0 0 0;
     background-color: white; } }
 @keyframes emptyTablePanel {
   100% {
-    width: 0px;
-    border-radius: 100% 0% 0% 100%;
+    width: 0;
+    border-radius: 100% 0 0 100%;
     background-color: #009887; }
   0% {
     width: 1680%;
-    border-radius: 0% 0% 0% 0%;
+    border-radius: 0 0 0 0;
     background-color: white; } }
 @keyframes maximizeTablePanel {
   100% {
@@ -636,16 +688,16 @@ nav img, .footer img {
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader {
             background-color: white;
             max-height: 86px;
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2784313725); }
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.2784313725); }
             .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader .btn {
-              margin: 16px 10px 5px 0px;
+              margin: 16px 10px 5px 0;
               border-radius: 20px;
               padding: 3px 9px; }
             .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader .content-control {
               position: relative;
               z-index: 27; }
             .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader h4 {
-              margin: 5px 10px 5px 0px;
+              margin: 5px 10px 5px 0;
               padding-top: 7px;
               font-size: 125%;
               color: #6a0032;
@@ -664,13 +716,13 @@ nav img, .footer img {
             border-left: 0;
             border-top: 0;
             border-radius: 0;
-            box-shadow: 0 1px 0px #0000000f; }
+            box-shadow: 0 1px 0 #0000000f; }
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent #seachProjectDataTable {
             border: 0;
             border-radius: 0;
             border-bottom: 1px solid #d4d2d2;
             text-align: left;
-            box-shadow: 0 1px 0px #0000000f;
+            box-shadow: 0 1px 0 #0000000f;
             padding-right: 236px; }
             .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent #seachProjectDataTable::before {
               content: '';
@@ -678,8 +730,8 @@ nav img, .footer img {
               font-weight: 900;
               font-size: 70%;
               position: absolute;
-              left: 0px;
-              top: 0px;
+              left: 0;
+              top: 0;
               border-radius: 2px;
               padding: 2px 5px;
               background-color: #00655a; }
@@ -756,6 +808,10 @@ nav img, .footer img {
                 max-width: 90px;
                 width: 90px; }
               .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tableView #projects .pFundingS4 {
+                min-width: 50px;
+                max-width: 50px;
+                width: 50px; }
+              .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tableView #projects .pMore {
                 min-width: 50px;
                 max-width: 50px;
                 width: 50px; }
@@ -878,16 +934,18 @@ table.dataTable tbody tr:hover td {
   background-color: #e5f5f3;
   color: #2f9887; }
 
-table.dataTable thead th, table.dataTable thead td {
+table.dataTable thead td,
+table.dataTable thead th {
   border-bottom: 1px solid #111;
   text-align: left;
   padding-left: 10px; }
 
-table.dataTable thead th, table.dataTable thead td {
+table.dataTable thead td,
+table.dataTable thead th {
   border-bottom: 1px solid #d7d8d8; }
 
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
-  border-bottom: 0px; }
+  border-bottom: 0; }
 
 @media (min-width: 576px) {
   .modal-dialog {
@@ -898,7 +956,7 @@ table.dataTable thead th, table.dataTable thead td {
 .modal-content {
   background-color: #009887;
   border: none;
-  border-radius: 0rem;
+  border-radius: 0;
   box-shadow: 0 0 4px #00000059; }
   .modal-content .modal-body {
     color: white;
@@ -916,7 +974,8 @@ table.dataTable thead th, table.dataTable thead td {
       min-height: 57px; }
     .modal-content .modal-body .align-image-center {
       margin: 0 auto; }
-    .modal-content .modal-body .carousel-control-next-icon, .modal-content .modal-body .carousel-control-prev-icon {
+    .modal-content .modal-body .carousel-control-next-icon,
+    .modal-content .modal-body .carousel-control-prev-icon {
       margin-top: 100px; }
   .modal-content .carousel-item h4 span {
     float: right;
@@ -935,7 +994,7 @@ table.dataTable thead th, table.dataTable thead td {
   display: inline; }
 
 body :focus {
-  outline: 0px; }
+  outline: 0; }
 body.keyboard-mode *:focus {
   outline: 2px solid #2196f3; }
 

@@ -29,7 +29,7 @@ boardColumnNum = 1;
 capitalColumnNum = 2;
 assetColumnNum = 3;
 regionsColumnNum = 5;
-totalColumnCount = 12;
+totalColumnCount = 13;
 assetFilter = '';
 regionsFilter = '';
 boardFilter != '';
@@ -71,7 +71,8 @@ projectTableOptions = {
     { className: "projectsHead", "targets": [projectColumnNum] },
     { className: "stageHead", "targets": [boardColumnNum] },
   ],
-  "columns": [{
+  "columns": [
+    {
       className: "pProjects"
     },
     {
@@ -107,8 +108,12 @@ projectTableOptions = {
     {
       className: "pFundingS4"
     },
+    {
+      className: "pMore"
+    }
   ],
-  "aoColumns": [{
+  "aoColumns": [
+    {
       "sName": "Projects"
     },
     {
@@ -143,6 +148,9 @@ projectTableOptions = {
     },
     {
       "sName": "FundingS4"
+    },
+    {
+      "sName": "MoreInfo"
     }
   ]
 };
@@ -243,6 +251,8 @@ function flashRows() {
     htmlRowTemplate += '<td class="pFundingS3" data-order="' + project.Budget2021 + project.Budget2122 + '" aria-label=" Total Funding for 2020 to 2021 and 2021 to 2022 is,'+ formatCurrency( fyYearExpenseSum(project.Budget2021, project.Budget2122) ) +'.">' + formatCurrency( fyYearExpenseSum(project.Budget2021, project.Budget2122) ) + '</td>';
     // Beyond
     htmlRowTemplate += '<td class="pFundingS4" data-order="' + project.Beyond + '" aria-label="Funding beyond 2022 is,'+ formatCurrency(project.Beyond) +'.">' + formatCurrency(project.Beyond) + '</td>';
+    // MoreInfo Colum
+    htmlRowTemplate += '<td class="pMore" aria-label="More Information Not Available Yet">N/A</td>';
     // End of Row
     htmlRowTemplate += '</tr>';
     // append Data
@@ -597,6 +607,8 @@ function projectBtnClick() {
       for (let i = regionsColumnNum + 1; i < totalColumnCount; i++) {
         projectDataTable.column(i).visible(false);
       }
+      // Setting More Info Column Visible
+      projectDataTable.column(totalColumnCount - 1).visible(true);
       projectDataTable.column(boardColumnNum).visible(true);
       projectDataTable.column(capitalColumnNum).visible(false);
       $('.dataTables_scrollBody').css('max-height', '540px');
