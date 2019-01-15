@@ -527,7 +527,7 @@ nav img {
         box-shadow: none; }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul {
-            top: -948px;
+            top: -947px;
             left: -70px;
             transform: scale(0.85); } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li {
@@ -573,11 +573,8 @@ nav img {
             top: 278px; }
             @media (min-width: 992px) and (max-width: 1250px) {
               .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
-                left: 84px;
-                top: 268px; }
-                .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5):after {
-                  content: 'left: 122px; top: 278px;';
-                  display: block; } }
+                top: 266px;
+                left: 84px; } }
     .dilgp-animation-canvas .intractive-portal .project-details-btn {
       display: flex;
       flex: 0 0 5%;
