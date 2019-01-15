@@ -357,7 +357,7 @@ nav img {
         border-radius: 2px;
         box-shadow: 0 0 6px #a5b8b7;
         padding: 15px; }
-        @media (min-width: 992px) and (max-width: 1025px) {
+        @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .databox {
             transform: scale(0.9); } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .databox h5 {
@@ -387,7 +387,7 @@ nav img {
         z-index: 1;
         top: -653px;
         left: 232px; }
-        @media (min-width: 992px) and (max-width: 1025px) {
+        @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-anim {
             transform: scale(0.8);
             top: -533px;
@@ -396,7 +396,7 @@ nav img {
         position: relative;
         z-index: 1;
         top: -800px; }
-        @media (min-width: 992px) and (max-width: 1025px) {
+        @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names {
             top: -660px;
             transform: scale(0.9); } }
@@ -414,7 +414,7 @@ nav img {
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
               top: -188px;
               left: 1.6%; }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
                   top: -202px;
                   left: -5.4%; } }
@@ -422,7 +422,7 @@ nav img {
               left: 4.9%;
               top: -169px;
               transform: scale(0.92); }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(2) {
                   left: -2.1%;
                   top: -184px; } }
@@ -430,7 +430,7 @@ nav img {
               left: 7.4%;
               top: -155px;
               transform: scale(0.92); }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(3) {
                   left: -0.6%;
                   top: -172px; } }
@@ -438,7 +438,7 @@ nav img {
               left: 10.2%;
               top: -142px;
               transform: scale(0.92); }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(4) {
                   left: 2.2%;
                   top: -159px; } }
@@ -448,7 +448,7 @@ nav img {
               top: -219px;
               left: 14%;
               cursor: pointer; }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(5) {
                   top: -230px;
                   left: 5%; } }
@@ -458,7 +458,7 @@ nav img {
               top: 94px;
               left: -32.7%;
               cursor: help; }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(6) {
                   top: 53px;
                   left: -48.9%; } }
@@ -468,7 +468,7 @@ nav img {
               top: 136px;
               left: 5.1%;
               cursor: pointer; }
-              @media (min-width: 992px) and (max-width: 1025px) {
+              @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(7) {
                   top: 94px;
                   left: -7.5%; } }
@@ -514,7 +514,7 @@ nav img {
         z-index: 1;
         color: #009887;
         color: #009887; }
-        @media (min-width: 992px) and (max-width: 1025px) {
+        @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-span h6 {
             left: -350px;
             top: -739px; } }
@@ -525,7 +525,7 @@ nav img {
         outline: 0;
         border: 0;
         box-shadow: none; }
-        @media (min-width: 992px) and (max-width: 1025px) {
+        @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul {
             top: -948px;
             left: -70px;
@@ -571,10 +571,13 @@ nav img {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
             left: 122px;
             top: 278px; }
-            @media (min-width: 992px) and (max-width: 1025px) {
+            @media (min-width: 992px) and (max-width: 1250px) {
               .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
                 left: 84px;
-                top: 268px; } }
+                top: 268px; }
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5):after {
+                  content: 'left: 122px; top: 278px;';
+                  display: block; } }
     .dilgp-animation-canvas .intractive-portal .project-details-btn {
       display: flex;
       flex: 0 0 5%;

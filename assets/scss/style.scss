@@ -488,7 +488,7 @@ nav {
         border-radius: 2px;
         box-shadow: 0 0 6px #a5b8b7;
         padding: 15px;
-        @media (min-width:992px) and (max-width:1025px) {
+        @media (min-width:992px) and (max-width:1250px) {
           transform: scale(0.9);
         }
 
@@ -532,7 +532,7 @@ nav {
         z-index: 1;
         top: -653px;
         left: 232px;
-        @media (min-width:992px) and (max-width:1025px) {
+        @media (min-width:992px) and (max-width:1250px) {
           transform: scale(0.8);
           top: -533px;
           left: 163px;
@@ -543,7 +543,7 @@ nav {
         position: relative;
         z-index: 1;
         top: -800px;
-        @media (min-width:992px) and (max-width:1025px) {
+        @media (min-width:992px) and (max-width:1250px) {
           top: -660px;
           transform: scale(0.9);
         }
@@ -564,7 +564,7 @@ nav {
             &:nth-child(1) {
               top: -188px;
               left: 1.6%;
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 top: -202px;
                 left: -5.4%;
               }
@@ -574,7 +574,7 @@ nav {
               left: 4.9%;
               top: -169px;
               transform: scale(0.92);
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 left: -2.1%;
                 top: -184px;
               }
@@ -584,7 +584,7 @@ nav {
               left: 7.4%;
               top: -155px;
               transform: scale(0.92);
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 left: -0.6%;
                 top: -172px;
               }
@@ -594,7 +594,7 @@ nav {
               left: 10.2%;
               top: -142px;
               transform: scale(0.92);
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 left: 2.2%;
                 top: -159px;
               }
@@ -606,7 +606,7 @@ nav {
               top: -219px;
               left: 14%;
               cursor: pointer;
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 top: -230px;
                 left: 5%;
               }
@@ -618,7 +618,7 @@ nav {
               top: 94px;
               left: -32.7%;
               cursor: help;
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 top: 53px;
                 left: -48.9%;
               }
@@ -630,7 +630,7 @@ nav {
               top: 136px;
               left: 5.1%;
               cursor: pointer;
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 top: 94px;
                 left: -7.5%;
               }
@@ -690,7 +690,7 @@ nav {
           z-index: 1;
           color: #009887;
           color: $brand-primary-green;
-          @media (min-width:992px) and (max-width:1025px) {
+          @media (min-width:992px) and (max-width:1250px) {
             left: -350px;
             top: -739px;
           }
@@ -705,7 +705,7 @@ nav {
           outline: 0;
           border: 0;
           box-shadow: none;
-          @media (min-width:992px) and (max-width:1025px) {
+          @media (min-width:992px) and (max-width:1250px) {
             top: -948px;
             left: -70px;
             transform: scale(0.85);
@@ -762,14 +762,19 @@ nav {
             &:nth-child(4) {
               left: -43px;
               top: -45px;
+
             }
 
             &:nth-child(5) {
               left: 122px;
               top: 278px;
-              @media (min-width:992px) and (max-width:1025px) {
+              @media (min-width:992px) and (max-width:1250px) {
                 left: 84px;
                 top: 268px;
+                &:after{
+                  content: 'left: 122px; top: 278px;';
+                  display: block;
+                }
               }
             }
           }
