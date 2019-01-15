@@ -300,6 +300,9 @@ nav img {
       transition-duration: 0.25s;
       transition-timing-function: ease-in-out;
       overflow: hidden; }
+      @media (min-width: 992px) and (max-width: 1250px) {
+        .dilgp-animation-canvas .intractive-portal .intractive-canvas {
+          max-height: 796px; } }
       .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header {
         text-align: center;
         position: relative;

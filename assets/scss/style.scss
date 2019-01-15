@@ -418,6 +418,9 @@ nav {
       transition-duration: 0.25s;
       transition-timing-function: ease-in-out;
       overflow: hidden;
+      @media (min-width:992px) and (max-width:1250px) {
+        max-height: 796px;
+      }
 
       .intractive-canvas-header {
         text-align: center;
