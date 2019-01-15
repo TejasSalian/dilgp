@@ -39,16 +39,20 @@ body {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
+      max-width: 540px;
+      font-size: 100%; } }
+  @media (min-width: 834px) {
     .container {
-      max-width: 720px; } }
+      max-width: 834px;
+      font-size: 77%; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 1024px; } }
+      max-width: 1024px;
+      font-size: 100%; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1256px; } }
+      max-width: 1256px;
+      font-size: 100%; } }
 
 .footer img,
 nav img {
@@ -192,6 +196,9 @@ nav img {
           transition: all;
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .dilgp-animation-canvas .intractive-portal aside .filters span {
+              transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px, -11px); } }
         .dilgp-animation-canvas .intractive-portal aside .filters h6 {
           font-size: 72%;
           font-weight: normal;
@@ -200,6 +207,9 @@ nav img {
           position: relative;
           z-index: 1;
           margin: -6px 0 0; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .dilgp-animation-canvas .intractive-portal aside .filters h6 {
+              font-size: 50%; } }
       .dilgp-animation-canvas .intractive-portal aside .class-title, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header {
         margin-top: -15px;
         margin-bottom: 6px;
@@ -227,6 +237,10 @@ nav img {
           transition-timing-function: ease-in-out;
           font-size: 72%;
           font-style: italic; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .dilgp-animation-canvas .intractive-portal aside .class-title span, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header span, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header span {
+              right: 0px;
+              font-size: 64%; } }
       .dilgp-animation-canvas .intractive-portal aside .asset-class {
         padding: 15px;
         background-image: url("../images/asset-class.png");
@@ -272,6 +286,10 @@ nav img {
               border-radius: 2px;
               padding: 2px 5px;
               background-color: #00655a; }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal aside .regions .filters.active button::after {
+                  right: 13px;
+                  top: 6px; } }
           .dilgp-animation-canvas .intractive-portal aside .regions .filters button {
             width: calc(100% - 20px);
             padding-bottom: 0;
@@ -290,6 +308,9 @@ nav img {
             border: 1px solid #007c6e;
             box-shadow: none;
             outline: 0; }
+            @media (min-width: 768px) and (max-width: 991px) {
+              .dilgp-animation-canvas .intractive-portal aside .regions .filters button {
+                font-size: 68%; } }
     .dilgp-animation-canvas .intractive-portal .intractive-canvas {
       flex: 0 0 79%;
       max-width: 79%;
@@ -316,6 +337,10 @@ nav img {
           left: 20.5%;
           z-index: 2;
           color: #6a0032; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header h3 {
+              font-size: 100%;
+              top: -8px; } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions {
           width: 100%;
           position: relative;
@@ -328,6 +353,9 @@ nav img {
               position: relative;
               top: 10px;
               z-index: 2; }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .col-6 select {
+                  left: 24px; } }
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .help,
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .pipeline-overview {
             float: left;
@@ -360,6 +388,10 @@ nav img {
         border-radius: 2px;
         box-shadow: 0 0 6px #a5b8b7;
         padding: 15px; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .databox {
+            transform: scale(0.8);
+            left: 44px; } }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .databox {
             transform: scale(0.9); } }
@@ -390,6 +422,11 @@ nav img {
         z-index: 1;
         top: -653px;
         left: 232px; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-anim {
+            top: -437px;
+            left: 107px;
+            transform: scale(0.67); } }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-anim {
             transform: scale(0.8);
@@ -399,10 +436,16 @@ nav img {
         position: relative;
         z-index: 1;
         top: -800px; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names {
+            top: -572px;
+            transform: scale(0.8);
+            left: -75px; } }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names {
             top: -660px;
-            transform: scale(0.9); } }
+            transform: scale(0.9);
+            left: 0; } }
         .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul {
           list-style: none; }
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li {
@@ -417,6 +460,10 @@ nav img {
             .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
               top: -188px;
               left: 1.6%; }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
+                  top: -180px;
+                  left: 1.6%; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(1) {
                   top: -202px;
@@ -425,6 +472,10 @@ nav img {
               left: 4.9%;
               top: -169px;
               transform: scale(0.92); }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(2) {
+                  left: 4.7%;
+                  top: -163px; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(2) {
                   left: -2.1%;
@@ -433,6 +484,10 @@ nav img {
               left: 7.4%;
               top: -155px;
               transform: scale(0.92); }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(3) {
+                  left: 5.4%;
+                  top: -151px; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(3) {
                   left: -0.6%;
@@ -441,6 +496,10 @@ nav img {
               left: 10.2%;
               top: -142px;
               transform: scale(0.92); }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(4) {
+                  left: 7.2%;
+                  top: -140px; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(4) {
                   left: 2.2%;
@@ -451,6 +510,11 @@ nav img {
               top: -219px;
               left: 14%;
               cursor: pointer; }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(5) {
+                  font-size: 100%;
+                  top: -205px;
+                  left: 10.8%; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(5) {
                   top: -230px;
@@ -461,6 +525,11 @@ nav img {
               top: 94px;
               left: -32.7%;
               cursor: help; }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(6) {
+                  font-size: 100%;
+                  top: 54px;
+                  left: -50.7%; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(6) {
                   top: 53px;
@@ -471,6 +540,11 @@ nav img {
               top: 136px;
               left: 5.1%;
               cursor: pointer; }
+              @media (min-width: 768px) and (max-width: 991px) {
+                .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(7) {
+                  font-size: 100%;
+                  top: 89px;
+                  left: -2.7%; } }
               @media (min-width: 992px) and (max-width: 1250px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .tag-names ul li:nth-child(7) {
                   top: 94px;
@@ -502,6 +576,9 @@ nav img {
     top: -282px;
     height: 746px;
     z-index: 999995; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-span {
+          transform: scale(0.8); } }
       .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-span h6 {
         position: relative;
         left: -441px;
@@ -517,6 +594,10 @@ nav img {
         z-index: 1;
         color: #009887;
         color: #009887; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-span h6 {
+            left: -278px;
+            top: -797px; } }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .year-span h6 {
             left: -350px;
@@ -528,6 +609,11 @@ nav img {
         outline: 0;
         border: 0;
         box-shadow: none; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul {
+            transform: scale(0.7);
+            left: -102px;
+            top: -835px; } }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul {
             top: -947px;
@@ -565,15 +651,28 @@ nav img {
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(2) {
             left: -20px;
             top: -72px; }
+            @media (min-width: 768px) and (max-width: 991px) {
+              .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(2) {
+                left: -29px; } }
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(3) {
             left: -30px;
             top: -56px; }
+            @media (min-width: 768px) and (max-width: 991px) {
+              .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(3) {
+                left: -42px; } }
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(4) {
             left: -43px;
             top: -45px; }
+            @media (min-width: 768px) and (max-width: 991px) {
+              .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(4) {
+                left: -62px; } }
           .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
             left: 122px;
             top: 278px; }
+            @media (min-width: 768px) and (max-width: 991px) {
+              .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
+                left: 492px;
+                top: 159px; } }
             @media (min-width: 992px) and (max-width: 1250px) {
               .dilgp-animation-canvas .intractive-portal .intractive-canvas .baloons ul li:nth-child(5) {
                 top: 266px;

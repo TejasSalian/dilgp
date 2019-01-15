@@ -60,15 +60,19 @@ body {
   margin-left: auto;
   @media (min-width:576px) {
     max-width: 540px;
+    font-size: 100%;
   }
-  @media (min-width:768px) {
-    max-width: 720px;
+  @media (min-width:834px) {
+    max-width: 834px;
+    font-size: 77%;
   }
   @media (min-width:992px) {
     max-width: 1024px;
+    font-size: 100%;
   }
   @media (min-width:1200px) {
     max-width: 1256px;
+    font-size: 100%;
   }
 }
 
@@ -270,6 +274,9 @@ nav {
           transition: all;
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out;
+          @media (min-width:768px) and (max-width:991px){
+            transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px,-11px);
+          }
         }
 
         h6 {
@@ -280,6 +287,9 @@ nav {
           position: relative;
           z-index: 1;
           margin: -6px 0 0;
+          @media (min-width:768px) and (max-width:991px){
+            font-size: 50%;
+          }
         }
       }
 
@@ -313,6 +323,10 @@ nav {
           transition-timing-function: ease-in-out;
           font-size: 72%;
           font-style: italic;
+          @media (min-width:768px) and (max-width:991px){
+            right: 0px;
+            font-size: 64%;
+          }
         }
       }
 
@@ -381,6 +395,10 @@ nav {
                 border-radius: 2px;
                 padding: 2px 5px;
                 background-color: darken($brand-primary-green, 10%);
+                @media (min-width:768px) and (max-width:991px){
+                  right: 13px;
+                  top: 6px;
+                }
               }
             }
           }
@@ -403,6 +421,9 @@ nav {
             border: 1px solid darken($brand-primary-green, 5.5%);
             box-shadow: none;
             outline: 0;
+            @media (min-width:768px) and (max-width:991px){
+              font-size: 68%;
+            }
           }
         }
       }
@@ -436,6 +457,10 @@ nav {
           left: 20.5%;
           z-index: 2;
           color: $brand-secondary-magenta;
+          @media (min-width:768px) and (max-width:991px){
+            font-size: 100%;
+            top: -8px;
+          }
         }
 
         .actions {
@@ -452,6 +477,9 @@ nav {
               position: relative;
               top: 10px;
               z-index: 2;
+              @media (min-width:768px) and (max-width:991px){
+                left: 24px;
+              }
             }
           }
 
@@ -491,6 +519,10 @@ nav {
         border-radius: 2px;
         box-shadow: 0 0 6px #a5b8b7;
         padding: 15px;
+        @media (min-width:768px) and (max-width:991px){
+          transform: scale(0.8);
+          left: 44px;
+        }
         @media (min-width:992px) and (max-width:1250px) {
           transform: scale(0.9);
         }
@@ -535,6 +567,11 @@ nav {
         z-index: 1;
         top: -653px;
         left: 232px;
+        @media (min-width:768px) and (max-width:991px){
+          top: -437px;
+          left: 107px;
+          transform: scale(0.67);
+        }
         @media (min-width:992px) and (max-width:1250px) {
           transform: scale(0.8);
           top: -533px;
@@ -546,9 +583,15 @@ nav {
         position: relative;
         z-index: 1;
         top: -800px;
+        @media (min-width:768px) and (max-width:991px){
+          top: -572px;
+          transform: scale(0.8);
+          left: -75px;
+        }
         @media (min-width:992px) and (max-width:1250px) {
           top: -660px;
           transform: scale(0.9);
+          left: 0;
         }
 
         ul {
@@ -567,6 +610,10 @@ nav {
             &:nth-child(1) {
               top: -188px;
               left: 1.6%;
+              @media (min-width:768px) and (max-width:991px){
+                top: -180px;
+                left: 1.6%;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 top: -202px;
                 left: -5.4%;
@@ -577,6 +624,10 @@ nav {
               left: 4.9%;
               top: -169px;
               transform: scale(0.92);
+              @media (min-width:768px) and (max-width:991px){
+                left: 4.7%;
+                top: -163px;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 left: -2.1%;
                 top: -184px;
@@ -587,6 +638,10 @@ nav {
               left: 7.4%;
               top: -155px;
               transform: scale(0.92);
+              @media (min-width:768px) and (max-width:991px){
+                left: 5.4%;
+                top: -151px;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 left: -0.6%;
                 top: -172px;
@@ -596,6 +651,10 @@ nav {
             &:nth-child(4) {
               left: 10.2%;
               top: -142px;
+              @media (min-width:768px) and (max-width:991px){
+                left: 7.2%;
+                top: -140px;
+              }
               transform: scale(0.92);
               @media (min-width:992px) and (max-width:1250px) {
                 left: 2.2%;
@@ -609,6 +668,11 @@ nav {
               top: -219px;
               left: 14%;
               cursor: pointer;
+              @media (min-width:768px) and (max-width:991px){
+                font-size: 100%;
+                top: -205px;
+                left: 10.8%;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 top: -230px;
                 left: 5%;
@@ -621,6 +685,11 @@ nav {
               top: 94px;
               left: -32.7%;
               cursor: help;
+              @media (min-width:768px) and (max-width:991px){
+                font-size: 100%;
+                top: 54px;
+                left: -50.7%;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 top: 53px;
                 left: -48.9%;
@@ -633,6 +702,11 @@ nav {
               top: 136px;
               left: 5.1%;
               cursor: pointer;
+              @media (min-width:768px) and (max-width:991px){
+                font-size: 100%;
+                top: 89px;
+                left: -2.7%;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 top: 94px;
                 left: -7.5%;
@@ -678,6 +752,9 @@ nav {
       }
 
       .year-span {
+        @media (min-width:768px) and (max-width:991px){
+          transform: scale(0.8);
+        }
         h6 {
           position: relative;
           left: -441px;
@@ -693,6 +770,10 @@ nav {
           z-index: 1;
           color: #009887;
           color: $brand-primary-green;
+          @media (min-width:768px) and (max-width:991px){
+            left: -278px;
+            top: -797px;
+          }
           @media (min-width:992px) and (max-width:1250px) {
             left: -350px;
             top: -739px;
@@ -708,6 +789,11 @@ nav {
           outline: 0;
           border: 0;
           box-shadow: none;
+          @media (min-width:768px) and (max-width:991px){
+            transform: scale(0.7);
+            left: -102px;
+            top: -835px;
+          }
           @media (min-width:992px) and (max-width:1250px) {
             top: -947px;
             left: -70px;
@@ -755,22 +841,34 @@ nav {
             &:nth-child(2) {
               left: -20px;
               top: -72px;
+              @media (min-width:768px) and (max-width:991px){
+                left: -29px;
+              }
             }
 
             &:nth-child(3) {
               left: -30px;
               top: -56px;
+              @media (min-width:768px) and (max-width:991px){
+                left: -42px;
+              }
             }
 
             &:nth-child(4) {
               left: -43px;
               top: -45px;
-
+              @media (min-width:768px) and (max-width:991px){
+                left: -62px;
+              }
             }
 
             &:nth-child(5) {
               left: 122px;
               top: 278px;
+              @media (min-width:768px) and (max-width:991px){
+                left: 492px;
+                top: 159px;
+              }
               @media (min-width:992px) and (max-width:1250px) {
                 top: 266px;
                 left: 84px;
