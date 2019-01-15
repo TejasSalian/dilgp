@@ -611,6 +611,9 @@ nav img {
         display: flex;
         overflow: hidden;
         background-color: #009887; }
+        @media (min-width: 992px) and (max-width: 1250px) {
+          .dilgp-animation-canvas .intractive-portal .project-details .tablePannel {
+            height: 796px; } }
         .dilgp-animation-canvas .intractive-portal .project-details .tablePannel.white {
           background-color: white; }
         .dilgp-animation-canvas .intractive-portal .project-details .tablePannel.playing {

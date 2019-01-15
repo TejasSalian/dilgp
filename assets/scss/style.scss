@@ -819,6 +819,9 @@ nav {
         display: flex;
         overflow: hidden;
         background-color: $brand-primary-green;
+        @media (min-width:992px) and (max-width:1250px) {
+          height: 796px
+        }
 
         &.white {
           background-color: white;
