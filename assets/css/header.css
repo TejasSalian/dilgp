@@ -48,6 +48,9 @@
     list-style-type: none;
     margin: 0;
     padding: 0; }
+    @media (min-width: 576px) and (max-width: 768px) {
+      .site-header #nav ul {
+        font-size: 65%; } }
   .site-header #nav ul li {
     position: relative; }
   .site-header #nav li {

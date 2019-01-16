@@ -57,6 +57,9 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    @media (min-width:576px) and (max-width: 768px) {
+      font-size: 65%;
+    }
   }
   #nav ul li {
   }

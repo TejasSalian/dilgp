@@ -59,7 +59,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   @media (min-width:576px) {
-    max-width: 540px;
+    max-width: 768px;
     font-size: 100%;
   }
   @media (min-width:834px) {
@@ -250,6 +250,9 @@ nav {
           opacity: 1;
           background-color: $brand-primary-green;
           box-shadow: -6px 6px 12px darken($brand-primary-magenta, 8%);
+          @media (min-width:576px) and (max-width: 768px) {
+            transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-20px, -12px);
+          }
         }
 
         img {
@@ -274,8 +277,11 @@ nav {
           transition: all;
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out;
-          @media (min-width:768px) and (max-width:991px){
+          @media (min-width:769px) and (max-width:991px){
             transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px,-11px);
+          }
+          @media (min-width:992px) and (max-width:1250px) {
+            transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-7px, -7px);
           }
         }
 
@@ -287,7 +293,10 @@ nav {
           position: relative;
           z-index: 1;
           margin: -6px 0 0;
-          @media (min-width:768px) and (max-width:991px){
+          @media (min-width:576px) and (max-width: 768px) {
+            font-size: 58%;
+          }
+          @media (min-width:769px) and (max-width:991px){
             font-size: 50%;
           }
         }
@@ -303,11 +312,14 @@ nav {
 
         h5 {
           color: #fff;
-          font-size: 85%;
+          font-size: 86%;
           font-weight: normal;
           padding-top: 4px;
           padding-bottom: 0;
           margin-bottom: 6px;
+          @media (min-width:576px) and (max-width: 768px) {
+            font-size: 65%;
+          }
         }
 
         span {
@@ -323,7 +335,7 @@ nav {
           transition-timing-function: ease-in-out;
           font-size: 72%;
           font-style: italic;
-          @media (min-width:768px) and (max-width:991px){
+          @media (min-width:769px) and (max-width:991px){
             right: 0px;
             font-size: 64%;
           }
@@ -395,7 +407,11 @@ nav {
                 border-radius: 2px;
                 padding: 2px 5px;
                 background-color: darken($brand-primary-green, 10%);
-                @media (min-width:768px) and (max-width:991px){
+                @media (min-width:576px) and (max-width: 768px) {
+                  right: 10px;
+                  top: 7px;
+                }
+                @media (min-width:769px) and (max-width:991px){
                   right: 13px;
                   top: 6px;
                 }
@@ -421,7 +437,10 @@ nav {
             border: 1px solid darken($brand-primary-green, 5.5%);
             box-shadow: none;
             outline: 0;
-            @media (min-width:768px) and (max-width:991px){
+            @media (min-width:576px) and (max-width: 768px) {
+              font-size: 62%;
+            }
+            @media (min-width:769px) and (max-width:991px){
               font-size: 68%;
             }
           }
@@ -457,7 +476,11 @@ nav {
           left: 20.5%;
           z-index: 2;
           color: $brand-secondary-magenta;
-          @media (min-width:768px) and (max-width:991px){
+          @media (min-width:576px) and (max-width: 768px) {
+            font-size: 90%;
+            top: -15px;
+          }
+          @media (min-width:769px) and (max-width:991px){
             font-size: 100%;
             top: -8px;
           }
@@ -477,7 +500,12 @@ nav {
               position: relative;
               top: 10px;
               z-index: 2;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:576px) and (max-width: 768px) {
+                width: 50%;
+                top: 0px;
+                left: 20px;
+              }
+              @media (min-width:769px) and (max-width:991px){
                 left: 24px;
               }
             }
@@ -519,7 +547,10 @@ nav {
         border-radius: 2px;
         box-shadow: 0 0 6px #a5b8b7;
         padding: 15px;
-        @media (min-width:768px) and (max-width:991px){
+        @media (min-width:576px) and (max-width: 768px) {
+          transform: scale(0.7) translate(82px, -64px);
+        }
+        @media (min-width:769px) and (max-width:991px){
           transform: scale(0.8);
           left: 44px;
         }
@@ -567,7 +598,12 @@ nav {
         z-index: 1;
         top: -653px;
         left: 232px;
-        @media (min-width:768px) and (max-width:991px){
+        @media (min-width:576px) and (max-width: 768px) {
+          top: -403px;
+          left: 90px;
+          transform: scale(0.62);
+        }
+        @media (min-width:769px) and (max-width:991px){
           top: -437px;
           left: 107px;
           transform: scale(0.67);
@@ -583,7 +619,12 @@ nav {
         position: relative;
         z-index: 1;
         top: -800px;
-        @media (min-width:768px) and (max-width:991px){
+        @media (min-width:576px) and (max-width: 768px) {
+          transform: scale(0.7);
+          left: -95px;
+          top: -550px;
+        }
+        @media (min-width:769px) and (max-width:991px){
           top: -572px;
           transform: scale(0.8);
           left: -75px;
@@ -610,7 +651,7 @@ nav {
             &:nth-child(1) {
               top: -188px;
               left: 1.6%;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 top: -180px;
                 left: 1.6%;
               }
@@ -624,7 +665,7 @@ nav {
               left: 4.9%;
               top: -169px;
               transform: scale(0.92);
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 left: 4.7%;
                 top: -163px;
               }
@@ -638,7 +679,7 @@ nav {
               left: 7.4%;
               top: -155px;
               transform: scale(0.92);
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 left: 5.4%;
                 top: -151px;
               }
@@ -651,7 +692,7 @@ nav {
             &:nth-child(4) {
               left: 10.2%;
               top: -142px;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 left: 7.2%;
                 top: -140px;
               }
@@ -668,7 +709,11 @@ nav {
               top: -219px;
               left: 14%;
               cursor: pointer;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:576px) and (max-width: 768px) {
+                top: -213px;
+                left: 13.2%;
+              }
+              @media (min-width:769px) and (max-width:991px){
                 font-size: 100%;
                 top: -205px;
                 left: 10.8%;
@@ -685,7 +730,11 @@ nav {
               top: 94px;
               left: -32.7%;
               cursor: help;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:576px) and (max-width: 768px) {
+                top: 62px;
+                left: -58.7%;
+              }
+              @media (min-width:769px) and (max-width:991px){
                 font-size: 100%;
                 top: 54px;
                 left: -50.7%;
@@ -702,7 +751,11 @@ nav {
               top: 136px;
               left: 5.1%;
               cursor: pointer;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:576px) and (max-width: 768px) {
+                top: 74px;
+                left: 84.1%;
+              }
+              @media (min-width:769px) and (max-width:991px){
                 font-size: 100%;
                 top: 89px;
                 left: -2.7%;
@@ -752,7 +805,10 @@ nav {
       }
 
       .year-span {
-        @media (min-width:768px) and (max-width:991px){
+        @media (min-width:576px) and (max-width: 768px) {
+          transform: scale(0.7) translate(190px, -52px);
+        }
+        @media (min-width:769px) and (max-width:991px){
           transform: scale(0.8);
         }
         h6 {
@@ -770,7 +826,7 @@ nav {
           z-index: 1;
           color: #009887;
           color: $brand-primary-green;
-          @media (min-width:768px) and (max-width:991px){
+          @media (min-width:769px) and (max-width:991px){
             left: -278px;
             top: -797px;
           }
@@ -789,7 +845,12 @@ nav {
           outline: 0;
           border: 0;
           box-shadow: none;
-          @media (min-width:768px) and (max-width:991px){
+          @media (min-width:576px) and (max-width: 768px) {
+            transform: scale(0.6);
+            top: -824px;
+            left: -120px;
+          }
+          @media (min-width:769px) and (max-width:991px){
             transform: scale(0.7);
             left: -102px;
             top: -835px;
@@ -841,7 +902,7 @@ nav {
             &:nth-child(2) {
               left: -20px;
               top: -72px;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 left: -29px;
               }
             }
@@ -849,7 +910,7 @@ nav {
             &:nth-child(3) {
               left: -30px;
               top: -56px;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 left: -42px;
               }
             }
@@ -857,7 +918,7 @@ nav {
             &:nth-child(4) {
               left: -43px;
               top: -45px;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:769px) and (max-width:991px){
                 left: -62px;
               }
             }
@@ -865,7 +926,11 @@ nav {
             &:nth-child(5) {
               left: 122px;
               top: 278px;
-              @media (min-width:768px) and (max-width:991px){
+              @media (min-width:576px) and (max-width: 768px) {
+                left: 530px;
+                top: 186px;
+              }
+              @media (min-width:769px) and (max-width:991px){
                 left: 492px;
                 top: 159px;
               }
@@ -917,6 +982,9 @@ nav {
         display: flex;
         overflow: hidden;
         background-color: $brand-primary-green;
+        @media (min-width:576px) and (max-width: 768px) {
+          font-size: 80%;
+        }
         @media (min-width:992px) and (max-width:1250px) {
           height: 796px
         }
@@ -1544,6 +1612,12 @@ table.dataTable thead th {
 
 .svg-ms-fix {
   min-height: 1622px;
+  @media (min-width:769px) and (max-width:991px){
+    min-height: 1336px;
+  }
+  @media (min-width:992px) and (max-width:1250px) {
+    min-height: 1336px;
+  }
 
   svg {
     transform: scale(1.024);
