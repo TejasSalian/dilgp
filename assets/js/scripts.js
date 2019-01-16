@@ -320,10 +320,12 @@ function panelMaximize() {
   let projectsHead = $('.projectsHead');
   let minimizeBtn = $('.tablePannel-minimize');
   let detailsPanel = $('.detailsPanel');
+  let exportButtons = $('.dt-buttons');
   $('#seachProjectDataTable').attr('placeholder', 'Search Projects by Name');
   $.when(
     tablePannel.css({'width' : '1680%', 'z-index' : '20', 'position' : 'relative'})
   ).then(function() {
+    exportButtons.addClass('d-none');
     tablePannel.removeClass('animation-forward')
                .addClass('animation-maximize');
     tablePannelContent.css({'background-color' : 'white'});
@@ -346,6 +348,7 @@ function panelMinimize() {
   let projectsHead = $('.projectsHead');
   let minimizeBtn = $('.tablePannel-minimize');
   let detailsPanel = $('.detailsPanel');
+  let exportButtons = $('.dt-buttons');
   $('#seachProjectDataTable').attr('placeholder', 'Search Projects by Name, Contract Type, Region etc.');
   tablePannel.css({
               'width'    : '2000%',
@@ -365,6 +368,7 @@ function panelMinimize() {
   setTimeout(function () {
     tablePannel.removeAttr('style').css({'width' : '1680%', 'background-color': 'white'});
     projectsHead.removeAttr('style');
+    exportButtons.removeClass('d-none');
   }, 700);
   minimizeBtn.addClass('d-none');
   isDetailView = !isDetailView;
@@ -383,6 +387,8 @@ function returnDetailedView() {
 // Show Detail View of Projects
 function showProjectDetails(projectID) {
   let targetedProject = activeDataObject.ProjectDetailedData[String(projectID)];
+      // targetedProject = targetedProject[String(projectID)];
+      console.log(targetedProject);
   switch (targetedProject.CurrentStage) {
     case 'DELIVERY':
       loadDeliveryProjectView(targetedProject);
@@ -699,8 +705,7 @@ $('.explore-btn').on('click', function() {
 });
 
 // Animation Finished
-document.getElementById('CubeAnim')
-  .addEventListener('ended', CubeAnimFinished, false);
+document.getElementById('CubeAnim').addEventListener('ended', CubeAnimFinished, false);
 function CubeAnimFinished() {
   $('.video').removeClass('d-flex').addClass('d-none');
   $('.intractive-portal').removeClass('d-none').addClass('d-flex');
@@ -928,7 +933,7 @@ $('.tablePannel-close').on('click', function() {
 $('#projects tbody').on('click', 'tr[role=row]', function() {
   // If projectDataTable is Initialized and Table is minimized
   // Click event need to be disbaled for now
-  if (projectDataTable && false) {
+  if (projectDataTable) {
     let rowObject = $(this);
     let projectID;
     if ( rowObject.hasClass('active') ) {
@@ -1002,6 +1007,9 @@ $(document).ready(function() {
     }),
     $.getJSON(currentUrls.year2018Blob.ProjectYearlyDetailedData, function(response) {
       activeDataObject.ProjectYearlyDetailedData = response;
+    }),
+    $.getJSON(currentUrls.year2018Blob.ProjectDetailedData, function(response) {
+      activeDataObject.ProjectDetailedData = response;
     })
   ).then(function() {
     populateTable(2018);
