@@ -379,6 +379,28 @@ function panelMinimize() {
     tablePannel.removeAttr('style').css({'width' : '1680%', 'background-color': 'white'});
     projectsHead.removeAttr('style');
     exportButtons.removeClass('d-none');
+    // fix for table colum glitch
+    switch (stageSelection) {
+      case 1:
+        for (let i = 0; i < totalColumnCount; i++) {
+          projectDataTable.column(i).visible(true);
+        }
+        projectDataTable.column(boardColumnNum).visible(false);
+        break;
+      case -1:
+        for (let i = regionsColumnNum + 1; i < totalColumnCount; i++) {
+          projectDataTable.column(i).visible(false);
+        }
+        // Setting More Info Column Visible
+        projectDataTable.column(totalColumnCount - 1).visible(true);
+        projectDataTable.column(boardColumnNum).visible(true);
+        projectDataTable.column(capitalColumnNum).visible(false);
+        break;
+      default:
+        for (let i = 1; i < totalColumnCount; i++) {
+          projectDataTable.column(i).visible(true);
+        }
+    }
   }, 700);
   minimizeBtn.addClass('d-none');
   isDetailView = !isDetailView;
@@ -553,7 +575,11 @@ function loadDeliveryProjectView(projectObject) {
 
 // load Plannning View and Flash Project Details
 function loadPlanningProjectView(projectObject) {
-  console.log(projectObject);
+  // Get Icons
+  // Infrastructure Class was formaly known as Asset Class
+  let infrastructureClassImgUrl = imageFolder + getInfrastructureClassImgUrl(projectObject.AssetClass);
+  let sipRegionsImgUrl = imageFolder + getSipRegionsImgUrl(projectObject.RegionName);
+
   let pipelineSourceHeading;
   if (projectObject.PipelinResource[0] != undefined) {
       pipelineSourceHeading = '<a href="'+ projectObject.PipelinResource[0].Value +'" target="_blank">'+projectObject.PipelinResource[0].Text+'</a>';
@@ -568,7 +594,9 @@ function loadPlanningProjectView(projectObject) {
   $('.planningPanel .projectStatus .statusInfo tr:nth-child(2) > td:nth-child(3)').text(projectObject.SIPStatus);
 
   $('.planningPanel .regionInfo p').text(projectObject.RegionName);
+  $('.planningPanel .regionInfo .map img').attr('src', sipRegionsImgUrl);
   $('.planningPanel .infrastructureClass .asset p').text(projectObject.AssetClass);
+  $('.planningPanel .infrastructureClass .asset img').attr('src',infrastructureClassImgUrl);
   $('.planningPanel .infrastructureClass .pipeline-source h6').html(pipelineSourceHeading);
   $('.planningPanel .infrastructureClass .agency h6').text(projectObject.LeadAgency);
 }
