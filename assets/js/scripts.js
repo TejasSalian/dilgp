@@ -18,11 +18,13 @@ var projectObject, // Project (Table) jQuery Object
   isDetailView, // Whether details view is open or not
   currentUrls, // DataUrls
   dataObject, // An Object with all data fetched
-  activeDataObject; // A temparary Object with all data fetched for selected year
+  activeDataObject, // A temparary Object with all data fetched for selected year
+  imageFolder; // images folder url relative to /
 
 // Default Values / DataModel
 yearSelector = $('#year-select');
 projectObject = $('#projects');
+imageFolder = '/assets/images/'
 isDetailView = false;
 projectColumnNum = 0;
 boardColumnNum = 1;
@@ -239,7 +241,7 @@ function flashRows() {
     // Region
     htmlRowTemplate += '<td class="pRegion" aria-label="Region name is,'+ project.Region +'.">' + project.Region + '</td>';
     // Total estimated cost
-    htmlRowTemplate += '<td class="pTCost" data-order="' + project.Value + '" aria-label="Total Estimated cost is,'+ formatCurrency(project.Value) +'.">' + formatCurrency(project.Value) + '</td>';
+    htmlRowTemplate += '<td class="pTCost" data-order="' + project.Value + '" aria-label="Total Estimated cost is,'+ formatCurrency(project.Value) +'.">' + isOnGoingProject(formatCurrency(project.Value)) + '</td>';
     // Expenditure to June 2018
     htmlRowTemplate += '<td class="pExpenditure" data-order="' + project.TotalExpenseTillJune + '" aria-label="Total Expense Till June is,'+ formatCurrency(project.TotalExpenseTillJune) +'.">' + formatCurrency(project.TotalExpenseTillJune) + '</td>';
     // Funding
@@ -284,6 +286,14 @@ function millionfy(value) {
     return '$' + value + 'M';
   }else {
     return '--';
+  }
+}
+
+function isOnGoingProject(value) {
+  if (value != '--') {
+    return value;
+  }else {
+    return '<i>*on going</i>';
   }
 }
 
@@ -387,13 +397,12 @@ function returnDetailedView() {
 // Show Detail View of Projects
 function showProjectDetails(projectID) {
   let targetedProject = activeDataObject.ProjectDetailedData[String(projectID)];
-      // targetedProject = targetedProject[String(projectID)];
-      console.log(targetedProject);
   switch (targetedProject.CurrentStage) {
     case 'DELIVERY':
       loadDeliveryProjectView(targetedProject);
       $('.planningPanel').addClass('d-none');
       $('.deliveryPanel').removeClass('d-none');
+      $('.dilgp-animation-canvas .intractive-portal .project-details .tablePannel.animation-maximize').css({'height':'auto'});
       break;
     case 'PLANNING':
       loadPlanningProjectView(targetedProject);
@@ -405,9 +414,113 @@ function showProjectDetails(projectID) {
   }
 }
 
+// Translate to Associated Infrastructure Class Name
+function getInfrastructureClassImgUrl(infrastructureClassName) {
+
+  let relativeFolder = 'detailpage/asset-classes/';
+  let fileType = 'svg';
+  let infrastructureClassImgUrl = '';
+
+  switch (infrastructureClassName.toLowerCase()) {
+    case String('Cross Government').toLowerCase():
+      infrastructureClassImgUrl = 'cross-government';
+      break;
+    case String('Transport').toLowerCase():
+      infrastructureClassImgUrl = 'transport';
+      break;
+    case String('Energy').toLowerCase():
+      infrastructureClassImgUrl = 'energy';
+      break;
+    case String('Water').toLowerCase():
+      infrastructureClassImgUrl = 'water';
+      break;
+    case String('Health').toLowerCase():
+      infrastructureClassImgUrl = 'health';
+      break;
+    case String('Education and training').toLowerCase():
+      infrastructureClassImgUrl = 'education-and-training';
+      break;
+    case String('Digital').toLowerCase():
+      infrastructureClassImgUrl = 'digital';
+      break;
+    case String('Justice and Public Safety').toLowerCase():
+      infrastructureClassImgUrl = 'justice-and-public-safety';
+      break;
+    case String('Arts, Culture and Recreation').toLowerCase():
+      infrastructureClassImgUrl = 'arts-culture-and-recreation';
+      break;
+    case String('Social housing').toLowerCase():
+      infrastructureClassImgUrl = 'social-housing';
+      break;
+    default:
+      infrastructureClassImgUrl = '';
+  }
+
+  return relativeFolder + infrastructureClassImgUrl + '.' + fileType;
+}
+
+// Translate to Associated SIP Region Name
+function getSipRegionsImgUrl(sipRegionName) {
+
+  let relativeFolder = 'detailpage/sip-regions/';
+  let fileType = 'svg';
+  let sipRegionsImgUrl = '';
+
+  switch (sipRegionName.toLowerCase()) {
+    case String('Cairns').toLowerCase():
+      sipRegionsImgUrl = 'cairns';
+      break;
+    case String('Townsville').toLowerCase():
+      sipRegionsImgUrl = 'townsville';
+      break;
+    case String('Mackay').toLowerCase():
+      sipRegionsImgUrl = 'mackay';
+      break;
+    case String('Fitzroy').toLowerCase():
+      sipRegionsImgUrl = 'fitzroy';
+      break;
+    case String('Wide Bay').toLowerCase():
+      sipRegionsImgUrl = 'wide-bay';
+      break;
+    case String('Sunshine Coast').toLowerCase():
+      sipRegionsImgUrl = 'sunshine-coast';
+      break;
+    case String('Greater Brisbane').toLowerCase():
+      sipRegionsImgUrl = 'greater-brisbane';
+      break;
+    case String('Gold Coast').toLowerCase():
+      sipRegionsImgUrl = 'gold-coast';
+      break;
+    case String('Toowoomba').toLowerCase():
+      sipRegionsImgUrl = 'toowoomba';
+      break;
+    case String('Darling Downs/Maranoa').toLowerCase():
+      sipRegionsImgUrl = 'darling-down';
+      break;
+    case String('Remote Queensland').toLowerCase():
+      sipRegionsImgUrl = 'remote-queensland';
+      break;
+    case String('Statewide').toLowerCase():
+      sipRegionsImgUrl = 'statewide';
+      break;
+    case String('Multiple').toLowerCase():
+      sipRegionsImgUrl = 'multi-region';
+      break;
+    default:
+      sipRegionsImgUrl = 'multi-region';
+  }
+
+  return relativeFolder + sipRegionsImgUrl + '.' + fileType;
+}
+
 // load Delivery View and Flash Project Details
 function loadDeliveryProjectView(projectObject) {
    let flatArray = '';
+
+   // Get Icons
+   // Infrastructure Class was formaly known as Asset Class
+   let infrastructureClassImgUrl = imageFolder + getInfrastructureClassImgUrl(projectObject.AssetClass);
+   let sipRegionsImgUrl = imageFolder + getSipRegionsImgUrl(projectObject.RegionName);
 
    $('.deliveryPanel .poject-metaData > h3').text(projectObject.Header);
    $('.deliveryPanel .poject-metaData > p').text(projectObject.TagHeader);
@@ -432,13 +545,21 @@ function loadDeliveryProjectView(projectObject) {
    $('.deliveryPanel .fundingInfo tr:nth-child(4) > td:nth-child(3)').text(flatArray);
 
    $('.deliveryPanel .regionInfo p').text(projectObject.RegionName);
+   $('.deliveryPanel .regionInfo .map img').attr('src', sipRegionsImgUrl);
    $('.deliveryPanel .infrastructureClass .asset p').text(projectObject.AssetClass);
+   $('.deliveryPanel .infrastructureClass .asset img').attr('src',infrastructureClassImgUrl);
    $('.deliveryPanel .infrastructureClass .agency h6').text(projectObject.LeadAgency);
 }
 
 // load Plannning View and Flash Project Details
 function loadPlanningProjectView(projectObject) {
-  let pipelineSource = '<a href="'+ projectObject.PipelinResource[0].Value +'" target="_blank">'+projectObject.PipelinResource[0].Text+'</a>';
+  console.log(projectObject);
+  let pipelineSourceHeading;
+  if (projectObject.PipelinResource[0] != undefined) {
+      pipelineSourceHeading = '<a href="'+ projectObject.PipelinResource[0].Value +'" target="_blank">'+projectObject.PipelinResource[0].Text+'</a>';
+  }else {
+    pipelineSourceHeading = '<a href="#" target="_self"></a>';
+  }
 
   $('.planningPanel .poject-metaData > h5').text(projectObject.OpportunityFlag);
   $('.planningPanel .poject-metaData > h3').text(projectObject.Header);
@@ -448,7 +569,7 @@ function loadPlanningProjectView(projectObject) {
 
   $('.planningPanel .regionInfo p').text(projectObject.RegionName);
   $('.planningPanel .infrastructureClass .asset p').text(projectObject.AssetClass);
-  $('.planningPanel .infrastructureClass .pipeline-source h6').html(pipelineSource);
+  $('.planningPanel .infrastructureClass .pipeline-source h6').html(pipelineSourceHeading);
   $('.planningPanel .infrastructureClass .agency h6').text(projectObject.LeadAgency);
 }
 
