@@ -24,7 +24,7 @@ var projectObject, // Project (Table) jQuery Object
 // Default Values / DataModel
 yearSelector = $('#year-select');
 projectObject = $('#projects');
-imageFolder = '/assets/images/'
+imageFolder = './assets/images/'
 isDetailView = false;
 projectColumnNum = 0;
 boardColumnNum = 1;
