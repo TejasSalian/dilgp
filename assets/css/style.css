@@ -911,7 +911,8 @@ nav img {
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .SearchGroup {
             margin-top: 1rem;
             padding-top: 1rem;
-            padding-right: 0; }
+            padding-right: 0;
+            background-color: white; }
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tableView {
             background-color: white;
             padding-bottom: 15px;
@@ -1047,7 +1048,8 @@ nav img {
             margin-top: 4px; }
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .detailsPanel .deliveryPanel .regionInfo .map img {
             width: 100%;
-            margin-left: 15px; }
+            margin-left: 15px;
+            max-height: 162px; }
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .detailsPanel .deliveryPanel .infrastructureClass .asset p {
             margin-top: 1rem; }
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .detailsPanel .deliveryPanel .infrastructureClass .asset strong {
