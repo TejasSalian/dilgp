@@ -244,6 +244,7 @@ nav {
         text-align: center;
         padding: 0;
         cursor: pointer;
+        -webkit-transform:translate3d(0,0,0);
 
         &.active span {
           top: 12px;
@@ -259,6 +260,7 @@ nav {
           width: 48px;
           position: relative;
           z-index: 1;
+          -webkit-transform:translate3d(0,0,0);
         }
 
         span {
@@ -274,14 +276,17 @@ nav {
           border-radius: 4px;
           transform-origin: center;
           transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg);
+          -webkit-transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg);
           transition: all;
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out;
           @media (min-width:769px) and (max-width:991px){
             transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px,-11px);
+            -webkit-transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px,-11px);
           }
           @media (min-width:992px) and (max-width:1250px) {
             transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-7px, -7px);
+            -webkit-transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-7px, -7px);
           }
         }
 
@@ -293,6 +298,7 @@ nav {
           position: relative;
           z-index: 1;
           margin: -6px 0 0;
+          -webkit-transform:translate3d(0,0,0);
           @media (min-width:576px) and (max-width: 768px) {
             font-size: 58%;
           }
@@ -986,7 +992,8 @@ nav {
           font-size: 80%;
         }
         @media (min-width:992px) and (max-width:1250px) {
-          height: 796px
+          height: 796px;
+          min-height: 796px;
         }
 
         &.white {
@@ -1097,6 +1104,7 @@ nav {
           max-width: 100%;
           width: 100%;
           flex-wrap: wrap;
+          border-bottom: 1px solid #7cb5ab;
 
           .tablePannelContentHeader {
             background-color: white;

@@ -333,7 +333,7 @@ function panelMaximize() {
   let exportButtons = $('.dt-buttons');
   $('#seachProjectDataTable').attr('placeholder', 'Search Projects by Name');
   $.when(
-    tablePannel.css({'width' : '1680%', 'z-index' : '20', 'position' : 'relative'})
+    tablePannel.css({'width' : '1680%', 'z-index' : '999', 'position' : 'relative', '-webkit-transform' : 'translate3d(0,0,0)'})
   ).then(function() {
     exportButtons.addClass('d-none');
     tablePannel.removeClass('animation-forward')

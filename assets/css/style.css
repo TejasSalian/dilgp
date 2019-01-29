@@ -170,7 +170,8 @@ nav img {
       .dilgp-animation-canvas .intractive-portal aside .filters {
         text-align: center;
         padding: 0;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-transform: translate3d(0, 0, 0); }
         .dilgp-animation-canvas .intractive-portal aside .filters.active span {
           top: 12px;
           opacity: 1;
@@ -182,7 +183,8 @@ nav img {
         .dilgp-animation-canvas .intractive-portal aside .filters img {
           width: 48px;
           position: relative;
-          z-index: 1; }
+          z-index: 1;
+          -webkit-transform: translate3d(0, 0, 0); }
         .dilgp-animation-canvas .intractive-portal aside .filters span {
           position: absolute;
           top: 38px;
@@ -196,15 +198,18 @@ nav img {
           border-radius: 4px;
           transform-origin: center;
           transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg);
+          -webkit-transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg);
           transition: all;
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out; }
           @media (min-width: 769px) and (max-width: 991px) {
             .dilgp-animation-canvas .intractive-portal aside .filters span {
-              transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px, -11px); } }
+              transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px, -11px);
+              -webkit-transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-16px, -11px); } }
           @media (min-width: 992px) and (max-width: 1250px) {
             .dilgp-animation-canvas .intractive-portal aside .filters span {
-              transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-7px, -7px); } }
+              transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-7px, -7px);
+              -webkit-transform: rotateX(48deg) rotateY(0deg) rotateZ(-43deg) scale(0.8) translate(-7px, -7px); } }
         .dilgp-animation-canvas .intractive-portal aside .filters h6 {
           font-size: 72%;
           font-weight: normal;
@@ -212,7 +217,8 @@ nav img {
           line-height: 1;
           position: relative;
           z-index: 1;
-          margin: -6px 0 0; }
+          margin: -6px 0 0;
+          -webkit-transform: translate3d(0, 0, 0); }
           @media (min-width: 576px) and (max-width: 768px) {
             .dilgp-animation-canvas .intractive-portal aside .filters h6 {
               font-size: 58%; } }
@@ -780,7 +786,8 @@ nav img {
             font-size: 80%; } }
         @media (min-width: 992px) and (max-width: 1250px) {
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel {
-            height: 796px; } }
+            height: 796px;
+            min-height: 796px; } }
         .dilgp-animation-canvas .intractive-portal .project-details .tablePannel.white {
           background-color: white; }
         .dilgp-animation-canvas .intractive-portal .project-details .tablePannel.playing {
@@ -857,7 +864,8 @@ nav img {
           display: block;
           max-width: 100%;
           width: 100%;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          border-bottom: 1px solid #7cb5ab; }
           .dilgp-animation-canvas .intractive-portal .project-details .tablePannel .tablePannelContent .tablePannelContentHeader {
             background-color: white;
             max-height: 86px;
