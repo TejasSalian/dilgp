@@ -257,7 +257,7 @@ nav img {
           font-style: italic; }
           @media (min-width: 769px) and (max-width: 991px) {
             .dilgp-animation-canvas .intractive-portal aside .class-title span, .dilgp-animation-canvas .intractive-portal aside .asset-class .asset-class-header span, .dilgp-animation-canvas .intractive-portal aside .regions .regions-header span {
-              right: 0px;
+              right: 0;
               font-size: 64%; } }
       .dilgp-animation-canvas .intractive-portal aside .asset-class {
         padding: 15px;
@@ -385,7 +385,7 @@ nav img {
               @media (min-width: 576px) and (max-width: 768px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .col-6 select {
                   width: 50%;
-                  top: 0px;
+                  top: 0;
                   left: 20px; } }
               @media (min-width: 769px) and (max-width: 991px) {
                 .dilgp-animation-canvas .intractive-portal .intractive-canvas .intractive-canvas-header .actions .col-6 select {
